@@ -2,20 +2,6 @@
    INDEX — MADEIRENSE THEME (LIGHT + DARK)
    ============================================ */
 
-.form-select {
-  padding: 0.6rem 1rem;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
-  background: var(--background-light);
-  color: var(--text-color);
-  font-size: 1rem;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%233f8efc' stroke-width='2'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 12px;
-}
-
 /* Card principal */
 .index-page .card {
   background: var(--surface-index);
@@ -41,8 +27,8 @@
 }
 
 /* Search bar */
-.index-page .search-bar input,
-.index-page .search-bar select {
+input,
+select {
   background: var(--surface-alt-index);
   border-radius: var(--radius-md);
   border: 1px solid var(--text-muted-index);
@@ -57,18 +43,12 @@
   gap: 1rem;
 }
 
-.pref-item span {
-  font-weight: 600;
-  color: var(--text-color);
-  white-space: nowrap;
-}
-
 .pref-item select {
   flex: 1;
 }
 
-.index-page .search-bar input:focus,
-.index-page .search-bar select:focus {
+input:focus,
+select:focus {
   border-color: var(--madeira-gold);
   /*light preto dark branco*/
   box-shadow: 0 0 0 3px rgba(244, 184, 96, 0.35);
@@ -93,7 +73,7 @@
   color: var(--text-muted-index);
 }
 
-.index-page .experience-card__price  {
+.index-page .experience-card__price {
   color: var(--madeira-green);
   font-weight: 700;
 }
@@ -122,11 +102,18 @@
   transition: 0.2s ease;
 }
 
+.suggestion-btn--active{
+  background: var(--madeira-blue);
+  box-shadow: var(--shadow-strong-index);
+}
+
+
 .suggestion-btn:hover {
   background: var(--madeira-blue);
   transform: translateY(-2px);
   box-shadow: var(--shadow-strong-index);
 }
+
 
 /* ============================================
    GERAR ROTEIRO
@@ -209,9 +196,14 @@ h3,
 h2 {
   color: var(--tittle);
 }
-p{
+
+label,
+span,
+p,
+input::placeholder {
   color: var(--text-index);
 }
+
 body {
   background: var(--bg-index);
   background-attachment: fixed;
@@ -237,13 +229,35 @@ body {
   --shadow-soft-index: 0 6px 20px rgba(0, 0, 0, 0.12);
   --shadow-strong-index: 0 10px 30px rgba(0, 0, 0, 0.18);
 
-  --transition-index: 220ms ease:
+  --transition-index: 220ms ease;
+  --color-bg: #f7f7fb;
+  --color-surface-alt: #f0f2f7;
+  --color-text: #111827;
+  --color-text-muted: #6b7280;
+  --color-primary: #2563eb;
+  --color-primary-soft: #dbeafe;
+  --color-primary-strong: #1d4ed8;
+  --color-accent: #16a34a;
+  --color-border: #e5e7eb;
+  --color-danger: #dc2626;
 
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 10px rgba(15, 23, 42, 0.12);
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-index: #0a1a33 ;
+    --bg-index: #0a1a33;
     --surface-index: #0f172a;
     --surface-alt-index: #1e293b;
 
@@ -256,5 +270,15 @@ body {
     --tittle: #fbbf24;
     --shadow-soft-index: 0 6px 20px rgba(0, 0, 0, 0.45);
     --shadow-strong-index: 0 10px 30px rgba(0, 0, 0, 0.6);
+
+    --color-bg: #020617;
+    --color-surface-alt: #0b1120;
+    --color-text: #e5e7eb;
+    --color-text-muted: #9ca3af;
+    --color-primary: #38bdf8;
+    --color-primary-soft: #0f172a;
+    --color-primary-strong: #0ea5e9;
+    --color-accent: #22c55e;
+    --color-border: #1f2937;
   }
 }

@@ -1,475 +1,437 @@
 <!DOCTYPE html>
 <html lang="pt-PT" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Madeira Experiences – Lugares para ver</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS base -->
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/components.css" />
-    <link rel="stylesheet" href="./css/forms.css" />
-    <link rel="stylesheet" href="./css/coisas.css" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Madeira Experiences – Lugares para ver</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- NAVBAR GLOBAL -->
-    <link rel="stylesheet" href="./css/navbar.css" />
-  </head>
+  <!-- CSS base -->
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/forms.css" />
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- NAVBAR GLOBAL -->
+  <link rel="stylesheet" href="./css/navbar.css" />
+</head>
 
-  <body class="coisas-page">
-    <div class="app-shell">
-      <!-- NAVBAR PREMIUM GLOBAL -->
-      <header class="site-header">
-        <div class="site-header__inner">
-          <a href="index.html" class="site-logo">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
-              class="site-logo__img"
-            />
-            <span class="site-logo__text">
-              Madeira <span>Experiences</span>
-            </span>
-          </a>
+<body class="index-page">
+  <div class="app-shell">
+    <!-- NAVBAR PREMIUM GLOBAL -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+            class="site-logo__img" />
+          <span class="site-logo__text">
+            Madeira <span>Experiences</span>
+          </span>
+        </a>
 
-          <nav class="site-nav">
-            <ul class="site-nav__list">
-              <li><a href="index.html" class="site-nav__link">Início</a></li>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li><a href="index.html" class="site-nav__link">Início</a></li>
+            <li>
+              <a href="lugares.html" class="site-nav__link site-nav__link--active">Lugares para ver</a>
+            </li>
+            <li>
+              <a href="coisas-melhoresl.html" class="site-nav__link">Coisas para Fazer</a>
+            </li>
+            <li>
+              <a href="inspiracao.html" class="site-nav__link">Inspiração de Viagem</a>
+            </li>
+            <li>
+              <a href="tendencias.html" class="site-nav__link">Tendências</a>
+            </li>
+            <li>
+              <a href="favoritos.html" class="site-nav__link">Favoritos</a>
+            </li>
+            <li>
+              <a href="carrinho.html" class="site-nav__link site-nav__link--pill">Carrinho</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <!-- CHECKBOX INVISÍVEL -->
+          <input type="checkbox" id="toggleNoti" class="noti-toggle" />
+
+          <!-- SINO -->
+          <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
+
+          <!-- DROPDOWN -->
+          <div class="notifications-dropdown">
+            <h3>Notificações</h3>
+
+            <ul class="notifications-list">
               <li>
-                <a
-                  href="lugares.html"
-                  class="site-nav__link site-nav__link--active"
-                  >Lugares para ver</a
-                >
+                <a href="./notificacoes-atividades.html">🌄 Notificações de atividades</a>
               </li>
               <li>
-                <a href="coisas-melhoresl.html" class="site-nav__link"
-                  >Coisas para Fazer</a
-                >
+                <a href="./notificacoes-pagamentos.html">💵 Notificações de pagamentos</a>
               </li>
               <li>
-                <a href="inspiracao.html" class="site-nav__link"
-                  >Inspiração de Viagem</a
-                >
-              </li>
-              <li>
-                <a href="tendencias.html" class="site-nav__link">Tendências</a>
-              </li>
-              <li>
-                <a href="favoritos.html" class="site-nav__link">Favoritos</a>
-              </li>
-              <li>
-                <a
-                  href="carrinho.html"
-                  class="site-nav__link site-nav__link--pill"
-                  >Carrinho</a
-                >
+                <a href="./notificacoes-updates.html">📢 Update do site</a>
               </li>
             </ul>
-          </nav>
-
-          <div class="site-header__actions">
-            <!-- CHECKBOX INVISÍVEL -->
-            <input type="checkbox" id="toggleNoti" class="noti-toggle" />
-
-            <!-- SINO -->
-            <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
-
-            <!-- DROPDOWN -->
-            <div class="notifications-dropdown">
-              <h3>Notificações</h3>
-
-              <ul class="notifications-list">
-                <li>
-                  <a href="./notificacoes-atividades.html"
-                    >🌄 Notificações de atividades</a
-                  >
-                </li>
-                <li>
-                  <a href="./notificacoes-pagamentos.html"
-                    >💵 Notificações de pagamentos</a
-                  >
-                </li>
-                <li>
-                  <a href="./notificacoes-updates.html">📢 Update do site</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!-- MAIN -->
-      <main class="app-main app-main--full" id="conteudo-principal">
-        <section class="card" aria-labelledby="lugares-heading">
-          <header class="section-header section-header--with-tabs">
-            <div>
-              <h1 id="lugares-heading">Lugares para ver</h1>
-              <p class="section-subtitle">
-                Principais atrações, por zona da ilha.
-              </p>
+    <!-- MAIN -->
+    <main class="app-main app-main--full" id="conteudo-principal">
+      <section class="card" aria-labelledby="lugares-heading">
+        <header class="section-header section-header--with-tabs">
+          <div>
+            <h1 id="lugares-heading">Lugares para ver</h1>
+            <p class="section-subtitle">
+              Principais atrações, por zona da ilha.
+            </p>
+          </div>
+
+          <nav aria-label="Categorias de lugares">
+            <ul class="tab-list">
+              <li>
+                <button class="suggestion-btn suggestion-btn--active" type="button">
+                  Principais atrações
+                </button>
+              </li>
+              <li><button class="suggestion-btn" type="button">Costa Norte</button></li>
+              <li><button class="suggestion-btn" type="button">Costa Sul</button></li>
+              <li><button class="suggestion-btn" type="button">Porto Santo</button></li>
+              <li><button class="suggestion-btn" type="button">Capital</button></li>
+            </ul>
+          </nav>
+        </header>
+
+        <form class="search-bar search-bar--simple" role="search" aria-label="Pesquisar atrações">
+          <label class="search-bar__field">
+            <span class="visually-hidden">Pesquisar atrações</span>
+            <input type="search" placeholder="Pesquisar atrações, miradouros, vilas..." name="q" />
+          </label>
+          <button class="btn btn--ghost" type="submit">Pesquisar</button>
+        </form>
+
+        <!-- GRID DE LUGARES -->
+        <div class="cards-grid cards-grid--3">
+          <!-- CARD 1 -->
+          <article class="place-card">
+            <header>
+              <h2>Miradouro do Cabo Girão</h2>
+              <div class="place-card__image">
+                <img src="https://www.madeirahappytours.com/templates/yootheme/cache/13/CaboGirao-01-135a0f81.jpeg"
+                  alt="Foto do local" />
+              </div>
+              <p class="place-card__location">Costa Sul • Câmara de Lobos</p>
+            </header>
+
+            <p class="place-card__highlights">
+              Destaques: plataforma de vidro, vista sobre Funchal e mar, pôr
+              do sol.
+            </p>
+
+            <p class="place-card__desc">
+              Um dos penhascos mais altos da Europa, com vistas panorâmicas e
+              uma skywalk em vidro.
+            </p>
+
+            <dl class="place-card__info">
+              <div>
+                <dt>Incluído no serviço</dt>
+                <dd>Transporte, guia local, seguro.</dd>
+              </div>
+              <div>
+                <dt>Itinerário</dt>
+                <dd>Funchal → Câmara de Lobos → Cabo Girão → regresso.</dd>
+              </div>
+            </dl>
+
+            <footer class="place-card__footer">
+              <button class="btn btn--ghost">Adicionar a favoritos</button>
+              <button class="btn btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="place-card">
+            <div class="place-card__image-corner">
+              <h2>Fajã dos Padres</h2>
+              <img
+                src="https://visitmadeira.com/media/uy0pnpkj/faj%C3%A3-dos-padres-drone-madeira-digitaltravelcouple.jpg"
+                alt="Fajã dos Padres" />
             </div>
 
-            <nav aria-label="Categorias de lugares">
-              <ul class="tab-list">
-                <li>
-                  <button class="tab tab--active" type="button">
-                    Principais atrações
-                  </button>
-                </li>
-                <li><button class="tab" type="button">Costa Norte</button></li>
-                <li><button class="tab" type="button">Costa Sul</button></li>
-                <li><button class="tab" type="button">Porto Santo</button></li>
-                <li><button class="tab" type="button">Capital</button></li>
-              </ul>
-            </nav>
-          </header>
+            <header>
+              <p class="place-card__location">Costa Sul • Câmara de Lobos</p>
+            </header>
 
-          <form
-            class="search-bar search-bar--simple"
-            role="search"
-            aria-label="Pesquisar atrações"
-          >
-            <label class="search-bar__field">
-              <span class="visually-hidden">Pesquisar atrações</span>
-              <input
-                type="search"
-                placeholder="Pesquisar atrações, miradouros, vilas..."
-                name="q"
-              />
-            </label>
-            <button class="btn btn--ghost" type="submit">Pesquisar</button>
-          </form>
+            <p class="place-card__highlights">
+              Destaques: teleférico, praia isolada, agricultura biológica,
+              restaurante à beira-mar.
+            </p>
 
-          <!-- GRID DE LUGARES -->
-          <div class="cards-grid cards-grid--3">
-            <!-- CARD 1 -->
-            <article class="place-card">
-              <header>
-                <h2>Miradouro do Cabo Girão</h2>
-                <div class="place-card__image">
-                  <img
-                    src="https://www.madeirahappytours.com/templates/yootheme/cache/13/CaboGirao-01-135a0f81.jpeg"
-                    alt="Foto do local"
-                  />
-                </div>
-                <p class="place-card__location">Costa Sul • Câmara de Lobos</p>
-              </header>
+            <p class="place-card__desc">
+              Um refúgio único acessível por teleférico, com vinhas
+              centenárias e mar cristalino.
+            </p>
 
-              <p class="place-card__highlights">
-                Destaques: plataforma de vidro, vista sobre Funchal e mar, pôr
-                do sol.
-              </p>
-
-              <p class="place-card__desc">
-                Um dos penhascos mais altos da Europa, com vistas panorâmicas e
-                uma skywalk em vidro.
-              </p>
-
-              <dl class="place-card__info">
-                <div>
-                  <dt>Incluído no serviço</dt>
-                  <dd>Transporte, guia local, seguro.</dd>
-                </div>
-                <div>
-                  <dt>Itinerário</dt>
-                  <dd>Funchal → Câmara de Lobos → Cabo Girão → regresso.</dd>
-                </div>
-              </dl>
-
-              <footer class="place-card__footer">
-                <button class="btn btn--ghost">Adicionar a favoritos</button>
-                <button class="btn btn--primary">Adicionar ao carrinho</button>
-              </footer>
-            </article>
-
-            <!-- CARD 2 -->
-            <article class="place-card">
-              <div class="place-card__image-corner">
-                <h2>Fajã dos Padres</h2>
-                <img
-                  src="https://visitmadeira.com/media/uy0pnpkj/faj%C3%A3-dos-padres-drone-madeira-digitaltravelcouple.jpg"
-                  alt="Fajã dos Padres"
-                />
+            <dl class="place-card__info">
+              <div>
+                <dt>Incluído no serviço</dt>
+                <dd>Transporte, bilhete de teleférico, guia local.</dd>
               </div>
-
-              <header>
-                <p class="place-card__location">Costa Sul • Câmara de Lobos</p>
-              </header>
-
-              <p class="place-card__highlights">
-                Destaques: teleférico, praia isolada, agricultura biológica,
-                restaurante à beira-mar.
-              </p>
-
-              <p class="place-card__desc">
-                Um refúgio único acessível por teleférico, com vinhas
-                centenárias e mar cristalino.
-              </p>
-
-              <dl class="place-card__info">
-                <div>
-                  <dt>Incluído no serviço</dt>
-                  <dd>Transporte, bilhete de teleférico, guia local.</dd>
-                </div>
-                <div>
-                  <dt>Itinerário</dt>
-                  <dd>
-                    Funchal → Teleférico da Fajã → Praia e Quinta → regresso.
-                  </dd>
-                </div>
-              </dl>
-
-              <footer class="place-card__footer">
-                <button class="btn btn--ghost">Adicionar a favoritos</button>
-                <button class="btn btn--primary">Adicionar ao carrinho</button>
-              </footer>
-            </article>
-
-            <!-- CARD 3 -->
-            <article class="place-card">
-              <div class="place-card__image-corner">
-                <h2>Piscinas Naturais de Porto Moniz</h2>
-                <img
-                  src="https://visitmadeira.com/media/5svdzslz/piscinas-naturais-porto-moniz-1.jpg"
-                  alt="Piscinas Naturais de Porto Moniz"
-                />
+              <div>
+                <dt>Itinerário</dt>
+                <dd>
+                  Funchal → Teleférico da Fajã → Praia e Quinta → regresso.
+                </dd>
               </div>
+            </dl>
 
-              <header>
-                <p class="place-card__location">Costa Norte • Porto Moniz</p>
-              </header>
+            <footer class="place-card__footer">
+              <button class="btn btn--ghost">Adicionar a favoritos</button>
+              <button class="btn btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
 
-              <p class="place-card__highlights">
-                Destaques: piscinas vulcânicas, água cristalina, paisagem
-                costeira.
-              </p>
+          <!-- CARD 3 -->
+          <article class="place-card">
+            <div class="place-card__image-corner">
+              <h2>Piscinas Naturais de Porto Moniz</h2>
+              <img src="https://visitmadeira.com/media/5svdzslz/piscinas-naturais-porto-moniz-1.jpg"
+                alt="Piscinas Naturais de Porto Moniz" />
+            </div>
 
-              <p class="place-card__desc">
-                As famosas piscinas naturais formadas por lava vulcânica,
-                perfeitas para banhos.
-              </p>
+            <header>
+              <p class="place-card__location">Costa Norte • Porto Moniz</p>
+            </header>
 
-              <dl class="place-card__info">
-                <div>
-                  <dt>Incluído no serviço</dt>
-                  <dd>Transporte, entrada nas piscinas, seguro.</dd>
-                </div>
-                <div>
-                  <dt>Itinerário</dt>
-                  <dd>Funchal → São Vicente → Porto Moniz → regresso.</dd>
-                </div>
-              </dl>
+            <p class="place-card__highlights">
+              Destaques: piscinas vulcânicas, água cristalina, paisagem
+              costeira.
+            </p>
 
-              <footer class="place-card__footer">
-                <button class="btn btn--ghost">Adicionar a favoritos</button>
-                <button class="btn btn--primary">Adicionar ao carrinho</button>
-              </footer>
-            </article>
+            <p class="place-card__desc">
+              As famosas piscinas naturais formadas por lava vulcânica,
+              perfeitas para banhos.
+            </p>
 
-            <!-- CARD 4 -->
-            <article class="place-card">
-              <div class="place-card__image-corner">
-                <h2>Casas Típicas de Santana</h2>
-                <img
-                  src="https://st3.idealista.pt/news/arquivos/styles/fullwidth_xl/public/2022-10/images/madeira-g73b446623_1280.jpg"
-                  alt="Casas Típicas de Santana"
-                />
+            <dl class="place-card__info">
+              <div>
+                <dt>Incluído no serviço</dt>
+                <dd>Transporte, entrada nas piscinas, seguro.</dd>
               </div>
-
-              <header>
-                <p class="place-card__location">Costa Norte • Santana</p>
-              </header>
-
-              <p class="place-card__highlights">
-                Destaques: casas triangulares, tradição madeirense, jardins.
-              </p>
-
-              <p class="place-card__desc">
-                As icónicas casas de colmo em forma triangular, símbolo da
-                Madeira.
-              </p>
-
-              <dl class="place-card__info">
-                <div>
-                  <dt>Incluído no serviço</dt>
-                  <dd>Transporte, visita guiada, seguro.</dd>
-                </div>
-                <div>
-                  <dt>Itinerário</dt>
-                  <dd>Funchal → Faial → Santana → regresso.</dd>
-                </div>
-              </dl>
-
-              <footer class="place-card__footer">
-                <button class="btn btn--ghost">Adicionar a favoritos</button>
-                <button class="btn btn--primary">Adicionar ao carrinho</button>
-              </footer>
-            </article>
-
-            <!-- CARD 5 -->
-            <article class="place-card">
-              <div class="place-card__image-corner">
-                <h2>Praia do Porto Santo</h2>
-                <img
-                  src="https://www.nit.pt/wp-content/uploads/2018/06/d6b4756c0223054148f540fc01bbc56d.jpg"
-                  alt="Praia do Porto Santo"
-                />
+              <div>
+                <dt>Itinerário</dt>
+                <dd>Funchal → São Vicente → Porto Moniz → regresso.</dd>
               </div>
+            </dl>
 
-              <header>
-                <p class="place-card__location">Porto Santo • Vila Baleira</p>
-              </header>
+            <footer class="place-card__footer">
+              <button class="btn btn--ghost">Adicionar a favoritos</button>
+              <button class="btn btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
 
-              <p class="place-card__highlights">
-                Destaques: 9 km de areia dourada, mar calmo, propriedades
-                terapêuticas.
-              </p>
+          <!-- CARD 4 -->
+          <article class="place-card">
+            <div class="place-card__image-corner">
+              <h2>Casas Típicas de Santana</h2>
+              <img
+                src="https://st3.idealista.pt/news/arquivos/styles/fullwidth_xl/public/2022-10/images/madeira-g73b446623_1280.jpg"
+                alt="Casas Típicas de Santana" />
+            </div>
 
-              <p class="place-card__desc">
-                Uma das praias mais emblemáticas de Portugal, ideal para
-                relaxar.
-              </p>
+            <header>
+              <p class="place-card__location">Costa Norte • Santana</p>
+            </header>
 
-              <dl class="place-card__info">
-                <div>
-                  <dt>Incluído no serviço</dt>
-                  <dd>Transporte local, guia, seguro.</dd>
-                </div>
-                <div>
-                  <dt>Itinerário</dt>
-                  <dd>Vila Baleira → Praia → Passeio costeiro → regresso.</dd>
-                </div>
-              </dl>
+            <p class="place-card__highlights">
+              Destaques: casas triangulares, tradição madeirense, jardins.
+            </p>
 
-              <footer class="place-card__footer">
-                <button class="btn btn--ghost">Adicionar a favoritos</button>
-                <button class="btn btn--primary">Adicionar ao carrinho</button>
-              </footer>
-            </article>
+            <p class="place-card__desc">
+              As icónicas casas de colmo em forma triangular, símbolo da
+              Madeira.
+            </p>
 
-            <!-- CARD 6 -->
-            <article class="place-card">
-              <div class="place-card__image-corner">
-                <h2>Pico do Castelo</h2>
-                <img
-                  src="https://visitmadeira.com/media/0chdtgva/pico-castelo3-francisco-correia.jpg"
-                  alt="Pico do Castelo"
-                />
+            <dl class="place-card__info">
+              <div>
+                <dt>Incluído no serviço</dt>
+                <dd>Transporte, visita guiada, seguro.</dd>
               </div>
-
-              <header>
-                <p class="place-card__location">Porto Santo • Zona Este</p>
-              </header>
-
-              <p class="place-card__highlights">
-                Destaques: vistas panorâmicas, trilhos, história local.
-              </p>
-
-              <p class="place-card__desc">
-                Um dos pontos mais altos da ilha, perfeito para caminhadas.
-              </p>
-
-              <dl class="place-card__info">
-                <div>
-                  <dt>Incluído no serviço</dt>
-                  <dd>Transporte, guia local, seguro.</dd>
-                </div>
-                <div>
-                  <dt>Itinerário</dt>
-                  <dd>
-                    Vila Baleira → Pico do Castelo → Miradouros → regresso.
-                  </dd>
-                </div>
-              </dl>
-
-              <footer class="place-card__footer">
-                <button class="btn btn--ghost">Adicionar a favoritos</button>
-                <button class="btn btn--primary">Adicionar ao carrinho</button>
-              </footer>
-            </article>
-
-            <!-- CARD 7 -->
-            <article class="place-card">
-              <h2>Teleférico do Funchal</h2>
-              <div class="place-card__image-corner">
-                <img
-                  src="https://madeiracablecar.com/media/nldd0ttj/madeira_cable_car_2024-37-3.jpg"
-                  alt="Teleférico do Funchal"
-                />
+              <div>
+                <dt>Itinerário</dt>
+                <dd>Funchal → Faial → Santana → regresso.</dd>
               </div>
+            </dl>
 
-              <header>
-                <p class="place-card__location">Capital • Funchal</p>
-              </header>
+            <footer class="place-card__footer">
+              <button class="btn btn--ghost">Adicionar a favoritos</button>
+              <button class="btn btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
 
-              <p class="place-card__highlights">
-                Destaques: vistas panorâmicas, viagem até ao Monte, jardins.
-              </p>
+          <!-- CARD 5 -->
+          <article class="place-card">
+            <div class="place-card__image-corner">
+              <h2>Praia do Porto Santo</h2>
+              <img src="https://www.nit.pt/wp-content/uploads/2018/06/d6b4756c0223054148f540fc01bbc56d.jpg"
+                alt="Praia do Porto Santo" />
+            </div>
 
-              <p class="place-card__desc">
-                Uma viagem aérea sobre o Funchal com vistas incríveis.
-              </p>
+            <header>
+              <p class="place-card__location">Porto Santo • Vila Baleira</p>
+            </header>
 
-              <dl class="place-card__info">
-                <div>
-                  <dt>Incluído no serviço</dt>
-                  <dd>Bilhete de teleférico, transporte, seguro.</dd>
-                </div>
-                <div>
-                  <dt>Itinerário</dt>
-                  <dd>Zona Velha → Teleférico → Monte → Jardins → regresso.</dd>
-                </div>
-              </dl>
+            <p class="place-card__highlights">
+              Destaques: 9 km de areia dourada, mar calmo, propriedades
+              terapêuticas.
+            </p>
 
-              <footer class="place-card__footer">
-                <button class="btn btn--ghost">Adicionar a favoritos</button>
-                <button class="btn btn--primary">Adicionar ao carrinho</button>
-              </footer>
-            </article>
+            <p class="place-card__desc">
+              Uma das praias mais emblemáticas de Portugal, ideal para
+              relaxar.
+            </p>
 
-            <!-- CARD 8 -->
-            <article class="place-card">
-              <h2>Mercado dos Lavradores</h2>
-              <div class="place-card__image-corner">
-                <img
-                  src="https://visitmadeira.com/media/b4oe42d3/funchal_mercadomunicipal1-francisco-correia.jpg"
-                  alt="Mercado dos Lavradores"
-                />
+            <dl class="place-card__info">
+              <div>
+                <dt>Incluído no serviço</dt>
+                <dd>Transporte local, guia, seguro.</dd>
               </div>
+              <div>
+                <dt>Itinerário</dt>
+                <dd>Vila Baleira → Praia → Passeio costeiro → regresso.</dd>
+              </div>
+            </dl>
 
-              <header>
-                <p class="place-card__location">Capital • Zona Velha</p>
-              </header>
+            <footer class="place-card__footer">
+              <button class="btn btn--ghost">Adicionar a favoritos</button>
+              <button class="btn btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
 
-              <p class="place-card__highlights">
-                Destaques: frutas tropicais, flores, peixe fresco, cultura
-                local.
-              </p>
+          <!-- CARD 6 -->
+          <article class="place-card">
+            <div class="place-card__image-corner">
+              <h2>Pico do Castelo</h2>
+              <img src="https://visitmadeira.com/media/0chdtgva/pico-castelo3-francisco-correia.jpg"
+                alt="Pico do Castelo" />
+            </div>
 
-              <p class="place-card__desc">
-                O mercado mais tradicional do Funchal, repleto de cores e
-                aromas.
-              </p>
+            <header>
+              <p class="place-card__location">Porto Santo • Zona Este</p>
+            </header>
 
-              <dl class="place-card__info">
-                <div>
-                  <dt>Incluído no serviço</dt>
-                  <dd>Guia local, degustações, seguro.</dd>
-                </div>
-                <div>
-                  <dt>Itinerário</dt>
-                  <dd>Centro do Funchal → Mercado → Zona Velha → regresso.</dd>
-                </div>
-              </dl>
+            <p class="place-card__highlights">
+              Destaques: vistas panorâmicas, trilhos, história local.
+            </p>
 
-              <footer class="place-card__footer">
-                <button class="btn btn--ghost">Adicionar a favoritos</button>
-                <button class="btn btn--primary">Adicionar ao carrinho</button>
-              </footer>
-            </article>
-          </div>
-        </section>
-      </main>
-    </div>
-  </body>
+            <p class="place-card__desc">
+              Um dos pontos mais altos da ilha, perfeito para caminhadas.
+            </p>
+
+            <dl class="place-card__info">
+              <div>
+                <dt>Incluído no serviço</dt>
+                <dd>Transporte, guia local, seguro.</dd>
+              </div>
+              <div>
+                <dt>Itinerário</dt>
+                <dd>
+                  Vila Baleira → Pico do Castelo → Miradouros → regresso.
+                </dd>
+              </div>
+            </dl>
+
+            <footer class="place-card__footer">
+              <button class="btn btn--ghost">Adicionar a favoritos</button>
+              <button class="btn btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
+
+          <!-- CARD 7 -->
+          <article class="place-card">
+            <h2>Teleférico do Funchal</h2>
+            <div class="place-card__image-corner">
+              <img src="https://madeiracablecar.com/media/nldd0ttj/madeira_cable_car_2024-37-3.jpg"
+                alt="Teleférico do Funchal" />
+            </div>
+
+            <header>
+              <p class="place-card__location">Capital • Funchal</p>
+            </header>
+
+            <p class="place-card__highlights">
+              Destaques: vistas panorâmicas, viagem até ao Monte, jardins.
+            </p>
+
+            <p class="place-card__desc">
+              Uma viagem aérea sobre o Funchal com vistas incríveis.
+            </p>
+
+            <dl class="place-card__info">
+              <div>
+                <dt>Incluído no serviço</dt>
+                <dd>Bilhete de teleférico, transporte, seguro.</dd>
+              </div>
+              <div>
+                <dt>Itinerário</dt>
+                <dd>Zona Velha → Teleférico → Monte → Jardins → regresso.</dd>
+              </div>
+            </dl>
+
+            <footer class="place-card__footer">
+              <button class="btn btn--ghost">Adicionar a favoritos</button>
+              <button class="btn btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
+
+          <!-- CARD 8 -->
+          <article class="place-card">
+            <h2>Mercado dos Lavradores</h2>
+            <div class="place-card__image-corner">
+              <img src="https://visitmadeira.com/media/b4oe42d3/funchal_mercadomunicipal1-francisco-correia.jpg"
+                alt="Mercado dos Lavradores" />
+            </div>
+
+            <header>
+              <p class="place-card__location">Capital • Zona Velha</p>
+            </header>
+
+            <p class="place-card__highlights">
+              Destaques: frutas tropicais, flores, peixe fresco, cultura
+              local.
+            </p>
+
+            <p class="place-card__desc">
+              O mercado mais tradicional do Funchal, repleto de cores e
+              aromas.
+            </p>
+
+            <dl class="place-card__info">
+              <div>
+                <dt>Incluído no serviço</dt>
+                <dd>Guia local, degustações, seguro.</dd>
+              </div>
+              <div>
+                <dt>Itinerário</dt>
+                <dd>Centro do Funchal → Mercado → Zona Velha → regresso.</dd>
+              </div>
+            </dl>
+
+            <footer class="place-card__footer">
+              <button class="btn btn--ghost">Adicionar a favoritos</button>
+              <button class="btn btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
 </html>

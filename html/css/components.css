@@ -61,22 +61,6 @@
   gap: 0.5rem;
 }
 
-.search-bar__field input {
-  padding: 0.9rem 1rem;
-  border-radius: var(--radius-md, 12px);
-  border: 1px solid rgba(27,77,137,0.25);
-  background: var(--color-surface-alt);
-  font-size: 1rem;
-  flex: 1;
-  color: var(--color-text);
-  transition: 180ms ease;
-}
-
-.search-bar__field input:focus {
-  border-color: var(--madeira-gold);
-  box-shadow: 0 0 0 3px rgba(244,184,96,0.35);
-}
-
 /* Botão de pesquisa circular */
 .search-bar--simple .btn--ghost {
   padding: 0.85rem 1.2rem;

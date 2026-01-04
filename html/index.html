@@ -1,332 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Madeira Experiences – Início</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS base -->
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/components.css" />
-    <link rel="stylesheet" href="./css/forms.css" />
-    <link rel="stylesheet" href="./css/coisas.css" />
-    <link rel="stylesheet" href="./css/index.css" /> 
+<head>
+  <meta charset="UTF-8" />
+  <title>Madeira Experiences – Início</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- NAVBAR GLOBAL -->
-    <link rel="stylesheet" href="./css/navbar.css" />
-  </head>
+  <!-- CSS base -->
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/forms.css" />
+  <link rel="stylesheet" href="./css/coisas.css" />
+  <link rel="stylesheet" href="./css/index.css" />
 
-  <body class="index-page">
-    <div class="app-shell">
-      <!-- NAVBAR PREMIUM GLOBAL -->
-      <header class="site-header">
-        <div class="site-header__inner">
-          <a href="index.html" class="site-logo">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
-              alt=""
-              class="site-logo__img"
-            />
-            <span class="site-logo__text">
-              Madeira <span>Experiences</span>
-            </span>
-          </a>
+  <!-- NAVBAR GLOBAL -->
+  <link rel="stylesheet" href="./css/navbar.css" />
+</head>
 
-          <!-- Botão mobile -->
-          <button
-            class="nav-toggle"
-            aria-expanded="false"
-            aria-controls="main-nav"
-          >
-            <span class="visually-hidden">Abrir menu</span>
-            <span class="nav-toggle__line"></span>
-            <span class="nav-toggle__line"></span>
-          </button>
+<body class="index-page">
+  <div class="app-shell">
+    <!-- NAVBAR PREMIUM GLOBAL -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+            alt="" class="site-logo__img" />
+          <span class="site-logo__text">
+            Madeira <span>Experiences</span>
+          </span>
+        </a>
 
-          <nav class="site-nav" id="main-nav" aria-label="Navegação principal">
-            <ul class="site-nav__list">
+        <!-- Botão mobile -->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+          <span class="visually-hidden">Abrir menu</span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+
+        <nav class="site-nav" id="main-nav" aria-label="Navegação principal">
+          <ul class="site-nav__list">
+            <li>
+              <a href="index.html" class="site-nav__link site-nav__link--active">Início</a>
+            </li>
+            <li>
+              <a href="lugares.html" class="site-nav__link">Lugares para ver</a>
+            </li>
+            <li>
+              <a href="coisas-melhoresl.html" class="site-nav__link">Coisas para Fazer</a>
+            </li>
+            <li>
+              <a href="inspiracao.html" class="site-nav__link">Inspiração de Viagem</a>
+            </li>
+            <li><a href="./coisas-melhoresl.html" class="site-nav__link">Roteiro</a></li>
+            <li>
+              <a href="favoritos.html" class="site-nav__link">Favoritos</a>
+            </li>
+            <li>
+              <a href="carrinho.html" class="site-nav__link site-nav__link--pill">Carrinho</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <!-- CHECKBOX INVISÍVEL -->
+          <input type="checkbox" id="toggleNoti" class="noti-toggle" />
+
+          <!-- SINO -->
+          <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
+
+          <!-- DROPDOWN -->
+          <div class="notifications-dropdown">
+            <h3>Notificações</h3>
+
+            <ul class="notifications-list">
               <li>
-                <a
-                  href="index.html"
-                  class="site-nav__link site-nav__link--active"
-                  >Início</a
-                >
+                <a href="./notificacoes-atividades.html">🌄 Notificações de atividades</a>
               </li>
               <li>
-                <a href="lugares.html" class="site-nav__link"
-                  >Lugares para ver</a
-                >
+                <a href="./notificacoes-pagamentos.html">💵 Notificações de pagamentos</a>
               </li>
               <li>
-                <a href="coisas-melhoresl.html" class="site-nav__link"
-                  >Coisas para Fazer</a
-                >
-              </li>
-              <li>
-                <a href="inspiracao.html" class="site-nav__link"
-                  >Inspiração de Viagem</a
-                >
-              </li>
-              <li><a href="./coisas-melhoresl.html" class="site-nav__link">Roteiro</a></li>
-              <li>
-                <a href="favoritos.html" class="site-nav__link">Favoritos</a>
-              </li>
-              <li>
-                <a
-                  href="carrinho.html"
-                  class="site-nav__link site-nav__link--pill"
-                  >Carrinho</a
-                >
+                <a href="./notificacoes-updates.html">📢 Update do site</a>
               </li>
             </ul>
-          </nav>
-
-          <div class="site-header__actions">
-            <!-- CHECKBOX INVISÍVEL -->
-            <input type="checkbox" id="toggleNoti" class="noti-toggle" />
-
-            <!-- SINO -->
-            <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
-
-            <!-- DROPDOWN -->
-            <div class="notifications-dropdown">
-              <h3>Notificações</h3>
-
-              <ul class="notifications-list">
-                <li>
-                  <a href="./notificacoes-atividades.html"
-                    >🌄 Notificações de atividades</a
-                  >
-                </li>
-                <li>
-                  <a href="./notificacoes-pagamentos.html"
-                    >💵 Notificações de pagamentos</a
-                  >
-                </li>
-                <li>
-                  <a href="./notificacoes-updates.html">📢 Update do site</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!-- MAIN -->
-      <main class="app-main app-main--with-sidebar" id="conteudo-principal">
-        <!-- DASHBOARD -->
-        <section aria-labelledby="dashboard-heading" class="card">
-          <header class="section-header">
-            <div>
-              <h1 id="dashboard-heading">Descobre a Madeira ao teu ritmo</h1>
-              <p class="section-subtitle">
-                Pesquisa lugares, experiências e cria o teu próprio roteiro com
-                guias locais.
-              </p>
-            </div>
-          </header>
-
-          <!-- SEARCH BAR -->
-          <form
-            class="search-bar"
-            role="search"
-            aria-label="Pesquisar atividades e lugares"
-          >
-            <label class="search-bar__field">
-              <span class="visually-hidden">O que procuras?</span>
-              <input
-                type="search"
-                name="q"
-                placeholder="Pesquisar lugares, trilhos, festas, experiências..."
-                autocomplete="off"
-              />
-            </label>
-
-            <label class="search-bar__field">
-              <span class="visually-hidden">Datas</span>
-              <input type="date" name="data" />
-            </label>
-
-            <label class="search-bar__field">
-              <span class="visually-hidden">Participantes</span>
-              <input type="number" name="participantes" min="1" value="2" />
-            </label>
-
-            <button class="btn btn--primary" type="submit">Pesquisar</button>
-          </form>
-
-          <!-- GRID PRINCIPAL -->
-          <div class="dashboard-grid">
-            <!-- SUGESTÕES DE ATIVIDADES -->
-            <section
-              aria-labelledby="sugestoes-atividades"
-              class="dashboard-block"
-            >
-              <h2 id="sugestoes-atividades">Sugestões de atividades</h2>
-
-              <div class="cards-grid">
-                <article class="experience-card">
-                  <img
-                    src="https://madeiralovers.com/wp-content/uploads/2024/07/caminhada-levada-25-fontes-madeira-1024x768.jpg"
-                    alt="Trilho das 25 Fontes"
-                    class="card-img"
-                  />
-                  <h3>Trilho das 25 Fontes</h3>
-                  <p class="experience-card__meta">
-                    Trilhos e levadas • Costa Norte
-                  </p>
-                  <p class="experience-card__desc">
-                    Caminhada guiada pelas levadas com vistas sobre o vale e
-                    cascatas.
-                  </p>
-                  <div class="experience-card__footer">
-                    <span class="experience-card__price">desde 45€</span>
-                    <button class="btn btn--ghost" type="button">
-                      Ver detalhes
-                    </button>
-                  </div>
-                </article>
-
-                <article class="experience-card">
-                  <img
-                    src="https://blog.madeira.best/storage/uploads/tinymce/melhores%20locais%20para%20ver%20o%20p%C3%B4r%20do%20sol%20na%20madeira-%20miradouro%20do%20cabo%20gir%C3%A3o_2.jpg"
-                    alt="Pôr do sol no Cabo Girão"
-                    class="card-img"
-                  />
-                  <h3>Pôr do sol no Cabo Girão</h3>
-                  <p class="experience-card__meta">Natureza • Costa Sul</p>
-                  <p class="experience-card__desc">
-                    Transporte, miradouro e prova de vinho com guia local.
-                  </p>
-                  <div class="experience-card__footer">
-                    <span class="experience-card__price">desde 30€</span>
-                    <button class="btn btn--ghost" type="button">
-                      Ver detalhes
-                    </button>
-                  </div>
-                </article>
-              </div>
-            </section>
-
-            <!-- SUGESTÕES DE LUGARES -->
-            <section
-              aria-labelledby="sugestoes-lugares"
-              class="dashboard-block"
-            >
-              <div class="suggestions-box">
-                <h2>Sugestões de lugares</h2>
-                <div class="suggestion-buttons">
-                  <a href="lugares-norte.html" class="suggestion-btn"
-                    >Costa Norte</a
-                  >
-                  <a href="lugares-sul.html" class="suggestion-btn"
-                    >Costa Sul</a
-                  >
-                  <a href="lugares-porto-santo.html" class="suggestion-btn"
-                    >Porto Santo</a
-                  >
-                  <a href="lugares-capital.html" class="suggestion-btn"
-                    >Funchal</a
-                  >
-                </div>
-              </div>
-            </section>
-
-            <!-- GERAR ROTEIRO -->
-            <section aria-labelledby="gerar-roteiro" class="itinerary-card">
-              <h2 id="gerar-roteiro">Gerar um roteiro rápido</h2>
-
-              <form class="itinerary-form">
-                <label>
-                  <span>Duração da viagem</span>
-                  <select name="dias">
-                    <option value="3">3 dias</option>
-                    <option value="5">5 dias</option>
-                    <option value="7">7 dias</option>
-                  </select>
-                </label>
-
-                <label>
-                  <span>Estilo de viagem</span>
-                  <select name="estilo">
-                    <option>Natureza e trilhos</option>
-                    <option>Gastronomia</option>
-                    <option>Cultura e tradições</option>
-                    <option>Mix equilibrado</option>
-                  </select>
-                </label>
-
-                <button class="btn--itinerary" type="submit">
-                  Gerar Roteiro
-                </button>
-              </form>
-            </section>
+    <!-- MAIN -->
+    <main class="app-main app-main--with-sidebar" id="conteudo-principal">
+      <!-- DASHBOARD -->
+      <section aria-labelledby="dashboard-heading" class="card">
+        <header class="section-header">
+          <div>
+            <h1 id="dashboard-heading">Descobre a Madeira ao teu ritmo</h1>
+            <p class="section-subtitle">
+              Pesquisa lugares, experiências e cria o teu próprio roteiro com
+              guias locais.
+            </p>
           </div>
-        </section>
+        </header>
 
-        <!-- SIDEBAR -->
-        <aside
-          class="card card--soft app-sidebar"
-          aria-label="Preferências e resumo"
-        >
-          <section aria-labelledby="prefs-heading">
-            <h2 id="prefs-heading">Preferências gerais</h2>
+        <!-- SEARCH BAR -->
+        <form class="search-bar" role="search" aria-label="Pesquisar atividades e lugares">
+          <span class="visually-hidden">O que procuras?</span>
+          <input type="search" name="q" placeholder="Pesquisar lugares, trilhos, festas, experiências..."
+            autocomplete="off" />
 
-            <form class="preferencias-form">
-              <div class="preferencias-row">
-                <label class="pref-item">
-                  <span>Idioma</span>
-                  <select name="idioma" class="form-select">
-                    <option>Português</option>
-                    <option>English</option>
-                  </select>
-                </label>
+          <span class="visually-hidden">Datas</span>
+          <input type="date" name="data" />
+          <span class="visually-hidden">Participantes</span>
+          <input type="number" name="participantes" min="1" value="2" />
 
-                <label class="pref-item">
-                  <span>Moeda</span>
-                  <select name="moeda" class="form-select">
-                    <option>EUR €</option>
-                    <option>USD $</option>
-                    <option>GBP £</option>
-                  </select>
-                </label>
+          <button class="btn btn--primary" type="submit">Pesquisar</button>
+        </form>
+
+        <!-- GRID PRINCIPAL -->
+        <div class="dashboard-grid">
+          <!-- SUGESTÕES DE ATIVIDADES -->
+          <section aria-labelledby="sugestoes-atividades" class="dashboard-block">
+            <h2 id="sugestoes-atividades">Sugestões de atividades</h2>
+
+            <div class="cards-grid">
+              <article class="experience-card">
+                <img
+                  src="https://madeiralovers.com/wp-content/uploads/2024/07/caminhada-levada-25-fontes-madeira-1024x768.jpg"
+                  alt="Trilho das 25 Fontes" class="card-img" />
+                <h3>Trilho das 25 Fontes</h3>
+                <p class="experience-card__meta">
+                  Trilhos e levadas • Costa Norte
+                </p>
+                <p class="experience-card__desc">
+                  Caminhada guiada pelas levadas com vistas sobre o vale e
+                  cascatas.
+                </p>
+                <div class="experience-card__footer">
+                  <span class="experience-card__price">desde 45€</span>
+                  <button class="btn btn--ghost" type="button">
+                    Ver detalhes
+                  </button>
+                </div>
+              </article>
+
+              <article class="experience-card">
+                <img
+                  src="https://blog.madeira.best/storage/uploads/tinymce/melhores%20locais%20para%20ver%20o%20p%C3%B4r%20do%20sol%20na%20madeira-%20miradouro%20do%20cabo%20gir%C3%A3o_2.jpg"
+                  alt="Pôr do sol no Cabo Girão" class="card-img" />
+                <h3>Pôr do sol no Cabo Girão</h3>
+                <p class="experience-card__meta">Natureza • Costa Sul</p>
+                <p class="experience-card__desc">
+                  Transporte, miradouro e prova de vinho com guia local.
+                </p>
+                <div class="experience-card__footer">
+                  <span class="experience-card__price">desde 30€</span>
+                  <button class="btn btn--ghost" type="button">
+                    Ver detalhes
+                  </button>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- SUGESTÕES DE LUGARES -->
+          <section aria-labelledby="sugestoes-lugares" class="dashboard-block">
+            <div class="suggestions-box">
+              <h2>Sugestões de lugares</h2>
+              <div class="suggestion-buttons">
+                <a href="lugares-norte.html" class="suggestion-btn">Costa Norte</a>
+                <a href="lugares-sul.html" class="suggestion-btn">Costa Sul</a>
+                <a href="lugares-porto-santo.html" class="suggestion-btn">Porto Santo</a>
+                <a href="lugares-capital.html" class="suggestion-btn">Funchal</a>
               </div>
+            </div>
+          </section>
+
+          <!-- GERAR ROTEIRO -->
+          <section aria-labelledby="gerar-roteiro" class="itinerary-card">
+            <h2 id="gerar-roteiro">Gerar um roteiro rápido</h2>
+
+            <form class="itinerary-form">
+              <label>
+                <span>Duração da viagem</span>
+                <select name="dias">
+                  <option value="3">3 dias</option>
+                  <option value="5">5 dias</option>
+                  <option value="7">7 dias</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Estilo de viagem</span>
+                <select name="estilo">
+                  <option>Natureza e trilhos</option>
+                  <option>Gastronomia</option>
+                  <option>Cultura e tradições</option>
+                  <option>Mix equilibrado</option>
+                </select>
+              </label>
+
+              <button class="btn--itinerary" type="submit">
+                Gerar Roteiro
+              </button>
             </form>
           </section>
-
-          <section aria-labelledby="ajuda-heading">
-            <h2 id="ajuda-heading">Ajuda rápida</h2>
-            <ul class="help-links">
-              <li><a href="contactos.html">Contactos</a></li>
-              <li><a href="Perguntas.html">Perguntas frequentes</a></li>
-            </ul>
-          </section>
-        </aside>
-      </main>
-
-      <!-- FOOTER -->
-      <footer class="site-footer">
-        <div class="site-footer__inner">
-          <div class="site-footer__brand">
-            <img src="img/logo.svg" alt="" class="site-footer__logo" />
-            <span>Madeira Experiences</span>
-          </div>
-
-          <nav aria-label="Navegação no rodapé">
-            <ul class="site-footer__nav">
-              <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="ajuda.html">Ajuda</a></li>
-              <li><a href="privacidade.html">Privacidade</a></li>
-              <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-          </nav>
-
-          <p class="site-footer__copy">
-            © 2026 Madeira Experiences. Protótipo académico.
-          </p>
         </div>
-      </footer>
-    </div>
-  </body>
+      </section>
+
+      <!-- SIDEBAR -->
+      <aside class="card card--soft app-sidebar" aria-label="Preferências e resumo">
+        <section aria-labelledby="prefs-heading">
+          <h2 id="prefs-heading">Preferências gerais</h2>
+
+          <form class="preferencias-form">
+            <div class="preferencias-row">
+              <label class="pref-item">
+                <span>Idioma</span>
+                <select name="idioma" class="form-select">
+                  <option>Português</option>
+                  <option>English</option>
+                </select>
+              </label>
+
+              <label class="pref-item">
+                <span>Moeda</span>
+                <select name="moeda" class="form-select">
+                  <option>EUR €</option>
+                  <option>USD $</option>
+                  <option>GBP £</option>
+                </select>
+              </label>
+            </div>
+          </form>
+        </section>
+
+        <section aria-labelledby="ajuda-heading">
+          <h2 id="ajuda-heading">Ajuda rápida</h2>
+          <ul class="help-links">
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="Perguntas.html">Perguntas frequentes</a></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <img src="img/logo.svg" alt="" class="site-footer__logo" />
+          <span>Madeira Experiences</span>
+        </div>
+
+        <nav aria-label="Navegação no rodapé">
+          <ul class="site-footer__nav">
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="ajuda.html">Ajuda</a></li>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <p class="site-footer__copy">
+          © 2026 Madeira Experiences. Protótipo académico.
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
