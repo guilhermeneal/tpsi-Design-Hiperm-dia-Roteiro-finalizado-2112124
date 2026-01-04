@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tendências – Madeira Experiences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS base -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/coisas.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- NAVBAR GLOBAL -->
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+
+  <body class="coisas-page">
+    <div class="app-shell">
+      <!-- NAVBAR PREMIUM GLOBAL -->
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="index.html" class="site-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+              class="site-logo__img"
+            />
+            <span class="site-logo__text">
+              Madeira <span>Experiences</span>
+            </span>
+          </a>
+
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li><a href="index.html" class="site-nav__link">Início</a></li>
+              <li>
+                <a href="lugares.html" class="site-nav__link"
+                  >Lugares para ver</a
+                >
+              </li>
+              <li>
+                <a href="coisas-melhoresl.html" class="site-nav__link"
+                  >Coisas para Fazer</a
+                >
+              </li>
+              <li>
+                <a href="inspiracao.html" class="site-nav__link"
+                  >Inspiração de Viagem</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tendencias.html"
+                  class="site-nav__link site-nav__link--active"
+                  >Tendências</a
+                >
+              </li>
+              <li>
+                <a href="favoritos.html" class="site-nav__link">Favoritos</a>
+              </li>
+              <li>
+                <a
+                  href="carrinho.html"
+                  class="site-nav__link site-nav__link--pill"
+                  >Carrinho</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="site-header__actions">
+            <!-- CHECKBOX INVISÍVEL -->
+            <input type="checkbox" id="toggleNoti" class="noti-toggle" />
+
+            <!-- SINO -->
+            <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
+
+            <!-- DROPDOWN -->
+            <div class="notifications-dropdown">
+              <h3>Notificações</h3>
+
+              <ul class="notifications-list">
+                <li>
+                  <a href="./notificacoes-atividades.html"
+                    >🌄 Notificações de atividades</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-pagamentos.html"
+                    >💵 Notificações de pagamentos</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-updates.html">📢 Update do site</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="app-main app-main--full">
+        <!-- HEADER DA PÁGINA -->
+        <section class="card">
+          <header class="section-header">
+            <h1>Tendências</h1>
+            <p class="section-subtitle">
+              Resumo • Lista de experiências • Perguntas Frequentes
+            </p>
+          </header>
+
+          <img
+            src="https://madeiralovers.com/wp-content/uploads/2024/07/caminhada-levada-25-fontes-madeira-1024x768.jpg"
+            alt="Tendências na Madeira"
+            class="card-img"
+            style="height: 300px; border-radius: 20px; margin-bottom: 1.5rem"
+          />
+
+          <p class="experience-card__desc">
+            Resumo das experiências mais procuradas, com lista de atividades em
+            destaque. Inclui opção de adicionar ao carrinho ou favoritos, área
+            de Perguntas Frequentes e comentários dos utilizadores.
+          </p>
+        </section>
+
+        <!-- LISTA DE EXPERIÊNCIAS EM TENDÊNCIA -->
+        <section class="cards-grid cards-grid--3">
+          <article class="experience-card">
+            <img
+              src="https://madeiralovers.com/wp-content/uploads/2024/07/caminhada-levada-25-fontes-madeira-1024x768.jpg"
+              class="card-img"
+            />
+            <h2>Trilho das 25 Fontes</h2>
+            <p class="experience-card__meta">Natureza • Costa Norte</p>
+            <p class="experience-card__desc">
+              Um dos trilhos mais procurados da ilha, com cascatas e levadas
+              icónicas.
+            </p>
+
+            <footer class="experience-card__footer">
+              <button class="btn--ghost">Favoritos</button>
+              <button class="btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
+
+          <article class="experience-card">
+            <img
+              src="https://blog.madeira.best/storage/uploads/tinymce/melhores%20locais%20para%20ver%20o%20p%C3%B4r%20do%20sol%20na%20madeira-%20miradouro%20do%20cabo%20gir%C3%A3o_2.jpg"
+              class="card-img"
+            />
+            <h2>Pôr do Sol no Cabo Girão</h2>
+            <p class="experience-card__meta">Miradouros • Costa Sul</p>
+            <p class="experience-card__desc">
+              Experiência premium com transporte, guia e prova de vinho.
+            </p>
+
+            <footer class="experience-card__footer">
+              <button class="btn--ghost">Favoritos</button>
+              <button class="btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
+
+          <article class="experience-card">
+            <img
+              src="https://www.madeiraoutdoor.com/assets/images/atividades/img-15-57-1-2013-05-13-12-24-23_small.jpg"
+              class="card-img"
+            />
+            <h2>Observação de Golfinhos</h2>
+            <p class="experience-card__meta">Mar • Funchal</p>
+            <p class="experience-card__desc">
+              Passeio de barco com avistamento garantido de golfinhos e baleias.
+            </p>
+
+            <footer class="experience-card__footer">
+              <button class="btn--ghost">Favoritos</button>
+              <button class="btn--primary">Adicionar ao carrinho</button>
+            </footer>
+          </article>
+        </section>
+
+        <!-- FAQ -->
+        <section class="card madeira-box" style="margin-top: 2rem">
+          <h2>Perguntas Frequentes</h2>
+
+          <div class="box-content">
+            <p>
+              <strong>As atividades são adequadas para todas as idades?</strong
+              ><br />
+              Sim, a maioria das atividades tem opções para famílias e grupos.
+            </p>
+
+            <p>
+              <strong>É necessário reservar com antecedência?</strong><br />
+              Recomendamos reservar com 48h de antecedência.
+            </p>
+
+            <p>
+              <strong>Posso cancelar gratuitamente?</strong><br />
+              Sim, até 24h antes da atividade.
+            </p>
+          </div>
+        </section>
+
+        <!-- COMENTÁRIOS -->
+        <section class="card madeira-box" style="margin-top: 2rem">
+          <h2>Comentários dos utilizadores</h2>
+
+          <div class="box-content">
+            <p>
+              <strong>Joana M.</strong> — “Experiências incríveis! A Madeira
+              nunca desilude.”
+            </p>
+            <p>
+              <strong>Ricardo F.</strong> — “O trilho das 25 Fontes foi o meu
+              favorito.”
+            </p>
+            <p>
+              <strong>Laura P.</strong> — “Muito fácil de reservar e excelente
+              organização.”
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

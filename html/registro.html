@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Criar conta – Madeira Experiences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+  </head>
+
+  <body class="auth-page">
+    <div class="app-shell">
+      <main class="app-main app-main--full" id="conteudo-principal">
+        <section class="card auth-card" aria-labelledby="register-heading">
+          <div class="registo-box">
+            <h1 id="register-heading">Criar conta</h1>
+
+            <form class="auth-form">
+              <label class="field">
+                <span>Nome</span>
+                <input type="text" name="nome" required />
+                <small class="field__error">Preenche o nome.</small>
+              </label>
+
+              <label class="field">
+                <span>Apelido</span>
+                <input type="text" name="apelido" required />
+                <small class="field__error">Preenche o apelido.</small>
+              </label>
+
+              <label class="field">
+                <span>Nome de utilizador</span>
+                <input type="text" name="username" minlength="3" required />
+                <small class="field__hint">Mínimo 3 caracteres.</small>
+                <small class="field__error">Nome de utilizador inválido.</small>
+              </label>
+
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" required />
+                <small class="field__hint">Utiliza um email válido.</small>
+                <small class="field__error">Email inválido.</small>
+              </label>
+
+              <label class="field">
+                <span>Palavra‑passe</span>
+                <input type="password" name="password" minlength="6" required />
+                <small class="field__hint">Mínimo 6 caracteres.</small>
+                <small class="field__error"
+                  >Palavra‑passe demasiado curta.</small
+                >
+              </label>
+
+              <button class="btn btn--primary" type="submit">
+                Criar conta
+              </button>
+
+              <p class="auth-form__note">
+                Já tens conta? <a href="login.html">Entrar</a>
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.faq-item {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-surface-alt);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.faq-item[open] {
+  background-color: color-mix(in srgb, var(--color-primary-soft) 40%, var(--color-surface-alt));
+}

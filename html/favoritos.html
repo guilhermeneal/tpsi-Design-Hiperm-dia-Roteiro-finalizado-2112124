@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Favoritos – Madeira Experiences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/coisas.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+
+  <body class="index-page">
+    <div class="app-shell">
+      <!-- ============================================
+           NAVBAR GLOBAL — MADEIRENSE PREMIUM
+      ============================================ -->
+      <header class="site-header">
+        <div class="site-header__inner">
+          <!-- LOGO -->
+          <a href="index.html" class="site-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+              class="site-logo__img"
+              alt="Logo Madeira"
+            />
+            <span class="site-logo__text">
+              Madeira <span>Experiences</span>
+            </span>
+          </a>
+
+          <!-- NAV -->
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li><a href="index.html" class="site-nav__link">Início</a></li>
+              <li>
+                <a href="lugares.html" class="site-nav__link"
+                  >Lugares para ver</a
+                >
+              </li>
+              <li>
+                <a href="coisas-melhoresl.html" class="site-nav__link"
+                  >Coisas para Fazer</a
+                >
+              </li>
+              <li>
+                <a href="inspiracao.html" class="site-nav__link"
+                  >Inspiração de Viagem</a
+                >
+              </li>
+              <li>
+                <a href="tendencias.html" class="site-nav__link">Tendências</a>
+              </li>
+              <li>
+                <a
+                  href="favoritos.html"
+                  class="site-nav__link site-nav__link--active"
+                  >Favoritos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="carrinho.html"
+                  class="site-nav__link site-nav__link--pill"
+                  >Carrinho</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="site-header__actions">
+            <!-- CHECKBOX INVISÍVEL -->
+            <input type="checkbox" id="toggleNoti" class="noti-toggle" />
+
+            <!-- SINO -->
+            <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
+
+            <!-- DROPDOWN -->
+            <div class="notifications-dropdown">
+              <h3>Notificações</h3>
+
+              <ul class="notifications-list">
+                <li>
+                  <a href="./notificacoes-atividades.html"
+                    >🌄 Notificações de atividades</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-pagamentos.html"
+                    >💵 Notificações de pagamentos</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-updates.html">📢 Update do site</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ============================================
+           CONTEÚDO PRINCIPAL
+      ============================================ -->
+      <main class="app-main" id="conteudo-principal">
+        <header class="section-header">
+          <h1>Favoritos</h1>
+          <p class="section-subtitle">
+            As tuas experiências guardadas — prontas para reservar quando
+            quiseres.
+          </p>
+        </header>
+
+        <!-- PESQUISA -->
+        <div class="search-bar--simple">
+          <div class="search-bar__field">
+            <input
+              type="text"
+              placeholder="Pesquisar atividades ou lugares..."
+            />
+          </div>
+          <button class="btn--ghost">Pesquisar</button>
+        </div>
+
+        <!-- LISTAS TEMÁTICAS -->
+        <section class="madeira-box">
+          <h2>Listas Temáticas</h2>
+          <div class="box-content">
+            <button class="btn--ghost">Aventura</button>
+            <button class="btn--ghost">Praias</button>
+            <button class="btn--ghost">Trilhos</button>
+            <button class="btn--ghost">Gastronomia</button>
+            <button class="btn--ghost">Cultura</button>
+          </div>
+        </section>
+
+        <!-- FAVORITOS -->
+        <section class="coisas-page">
+          <h2 class="section-header">As tuas atividades guardadas</h2>
+
+          <div class="cards-grid--3">
+            <!-- CARD 1 -->
+            <article class="experience-card">
+              <h2>Miradouro da Portela</h2>
+              <img
+                src="https://madeiraacessivelbywheelchair.pt/wp-content/uploads/2021/10/madeiraacessivelbywheelchair-madeiraacessivelbywheelchair-20191020-182353-yhqkd20200220110923-QXA.jpg"
+                class="card-img"
+                alt="Machico"
+              />
+              <p class="experience-card__meta">Machico · Vista Panorâmica</p>
+              <p class="experience-card__desc">
+                Uma das vistas mais emblemáticas da costa leste, ideal para
+                fotografia e relaxar.
+              </p>
+              <div class="experience-card__footer">
+                <button class="btn--ghost">Remover</button>
+                <button class="btn--primary">Adicionar ao carrinho</button>
+              </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="experience-card">
+              <h2>Praia das Palmeiras</h2>
+              <img
+                src="https://visitmadeira.com/media/wrzddual/santa-cruz_1-praia-das-palmeiras_-woodland-studio.jpg?width=1920&height=1080&rnd=133247525434870000"
+                class="card-img"
+                alt="Santa Cruz"
+              />
+              <p class="experience-card__meta">Santa Cruz · Praia</p>
+              <p class="experience-card__desc">
+                Zona balnear tranquila com vista para o mar e ambiente
+                descontraído.
+              </p>
+              <div class="experience-card__footer">
+                <button class="btn--ghost">Remover</button>
+                <button class="btn--primary">Adicionar ao carrinho</button>
+              </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="experience-card">
+              <h2>Vereda do Larano</h2>
+              <img
+                src="https://media.tacdn.com/media/attractions-splice-spp-674x446/13/bc/6d/61.jpg"
+                class="card-img"
+                alt="Vereda do Larano"
+              />
+              <p class="experience-card__meta">Machico · Trilho</p>
+              <p class="experience-card__desc">
+                Um dos trilhos costeiros mais bonitos da Madeira, com falésias e
+                mar infinito.
+              </p>
+              <div class="experience-card__footer">
+                <button class="btn--ghost">Remover</button>
+                <button class="btn--primary">Adicionar ao carrinho</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

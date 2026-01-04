@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ajuda – Madeira Experiences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS base -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/coisas.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+
+  <body class="ajuda">
+    <div class="app-shell">
+      <!-- NAVBAR -->
+      <header class="site-header">
+        <div class="site-header__inner">
+          <!-- LOGO -->
+          <a href="index.html" class="site-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+              class="site-logo__img"
+            />
+            <span class="site-logo__text">
+              Madeira <span>Experiences</span>
+            </span>
+          </a>
+
+          <!-- NAV -->
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li><a href="index.html" class="site-nav__link">Início</a></li>
+              <li>
+                <a href="lugares.html" class="site-nav__link"
+                  >Lugares para ver</a
+                >
+              </li>
+              <li>
+                <a href="coisas-melhoresl.html" class="site-nav__link"
+                  >Coisas para Fazer</a
+                >
+              </li>
+              <li>
+                <a href="inspiracao.html" class="site-nav__link"
+                  >Inspiração de Viagem</a
+                >
+              </li>
+              <li>
+                <a href="tendencias.html" class="site-nav__link">Tendências</a>
+              </li>
+              <li>
+                <a href="favoritos.html" class="site-nav__link">Favoritos</a>
+              </li>
+              <li>
+                <a href="contactos.html" class="site-nav__link">Contactos</a>
+              </li>
+              <li>
+                <a
+                  href="ajuda.html"
+                  class="site-nav__link site-nav__link--active"
+                  >Ajuda</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="site-header__actions">
+            <!-- CHECKBOX INVISÍVEL -->
+            <input type="checkbox" id="toggleNoti" class="noti-toggle" />
+
+            <!-- SINO -->
+            <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
+
+            <!-- DROPDOWN -->
+            <div class="notifications-dropdown">
+              <h3>Notificações</h3>
+
+              <ul class="notifications-list">
+                <li>
+                  <a href="./notificacoes-atividades.html"
+                    >🌄 Notificações de atividades</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-pagamentos.html" 
+                    >💵 Notificações de pagamentos</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-updates.html" 
+                    >📢 Update do site</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+            <!-- LOGIN / REGISTO -->
+            <div class="site-header__user auth-buttons">
+              <a href="login.html" class="btn btn--ghost">Entrar</a>
+              <a href="registo.html" class="btn btn--primary">Criar conta</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="app-main app-main--full">
+        <section class="card madeira-box">
+          <header class="section-header">
+            <h1>Centro de Ajuda</h1>
+            <p class="section-subtitle">
+              Encontra respostas rápidas e apoio útil
+            </p>
+          </header>
+
+          <h2>Perguntas frequentes</h2>
+          <ul>
+            <li>
+              <strong>Como posso criar uma conta?</strong><br />
+              Basta ir ao menu superior e clicar em “Criar conta”. Preenche os
+              dados e já está.
+            </li>
+
+            <li>
+              <strong>Como adiciono experiências aos favoritos?</strong><br />
+              Em qualquer card de experiência, clica no ícone de favorito para
+              guardar.
+            </li>
+
+            <li>
+              <strong>Como funciona o gerador de roteiros?</strong><br />
+              Escolhe a duração da viagem e o estilo preferido — o sistema cria
+              um roteiro automático.
+            </li>
+
+            <li>
+              <strong>Posso alterar o idioma ou a moeda?</strong><br />
+              Sim. No painel lateral tens as opções de idioma e moeda.
+            </li>
+          </ul>
+
+          <h2>Contactar suporte</h2>
+          <p>Se não encontraste resposta, estamos aqui para ajudar.</p>
+
+          <p><strong>Email:</strong> apoio@madeiraexperiences.com</p>
+          <p><strong>Telefone:</strong> +351 291 000 000</p>
+          <p><strong>Horário:</strong> Segunda a Sábado — 09:00 às 19:00</p>
+
+          <a
+            href="contactos.html"
+            class="btn btn--primary"
+            style="margin-top: 1rem"
+            >Ir para Contactos</a
+          >
+
+          <h2>Guias úteis</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre a plataforma</a></li>
+            <li><a href="privacidade.html">Política de Privacidade</a></li>
+            <li><a href="Perguntas.html">Perguntas Frequentes</a></li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <div class="site-footer__brand">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+              class="site-footer__logo"
+            />
+            <span>Madeira Experiences</span>
+          </div>
+
+          <nav>
+            <ul class="site-footer__nav">
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="privacidade.html">Privacidade</a></li>
+              <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+          </nav>
+
+          <p class="site-footer__copy">
+            © 2026 Madeira Experiences. Protótipo académico.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

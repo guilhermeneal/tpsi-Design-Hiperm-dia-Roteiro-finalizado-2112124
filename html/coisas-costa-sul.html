@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Melhores Experiências – Madeira Experiences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS base do sistema -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/coisas.css" />
+
+    <!-- NAVBAR GLOBAL -->
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+
+  <body class="coisas-page">
+    <div class="app-shell">
+      <!-- NAVBAR PREMIUM GLOBAL -->
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="index.html" class="site-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+              class="site-logo__img"
+            />
+            <span class="site-logo__text">
+              Madeira <span>Experiences</span>
+            </span>
+          </a>
+
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li><a href="index.html" class="site-nav__link">Início</a></li>
+              <li>
+                <a href="lugares.html" class="site-nav__link"
+                  >Lugares para ver</a
+                >
+              </li>
+              <li>
+                <a href="coisas-melhoresl.html" class="site-nav__link"
+                  >Coisas para Fazer</a
+                >
+              </li>
+              <li>
+                <a href="inspiracao.html" class="site-nav__link"
+                  >Inspiração de Viagem</a
+                >
+              </li>
+              <li>
+                <a href="tendencias.html" class="site-nav__link">Tendências</a>
+              </li>
+              <li>
+                <a href="favoritos.html" class="site-nav__link">Favoritos</a>
+              </li>
+              <li>
+                <a
+                  href="carrinho.html"
+                  class="site-nav__link site-nav__link--pill"
+                  >Carrinho</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="site-header__actions">
+            <!-- CHECKBOX INVISÍVEL -->
+            <input type="checkbox" id="toggleNoti" class="noti-toggle" />
+
+            <!-- SINO -->
+            <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
+
+            <!-- DROPDOWN -->
+            <div class="notifications-dropdown">
+              <h3>Notificações</h3>
+
+              <ul class="notifications-list">
+                <li>
+                  <a href="./notificacoes-atividades.html"
+                    >🌄 Notificações de atividades</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-pagamentos.html" 
+                    >💵 Notificações de pagamentos</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-updates.html" 
+                    >📢 Update do site</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- MAIN -->
+      <main class="app-main app-main--full">
+        <section class="card">
+          <header class="section-header">
+            <h1>Melhores experiências</h1>
+            <p class="section-subtitle">
+              As atividades mais populares da Madeira.
+            </p>
+          </header>
+
+          <!-- 🔵 SECÇÃO: EXPLORAR POR ZONA -->
+          <div class="suggestions-box" style="margin-bottom: 2rem">
+            <h2>Explorar por zona</h2>
+            <div class="suggestion-buttons">
+              <a href="coisas-melhores-norte.html" class="btn btn--ghost"
+                >Costa Norte</a
+              >
+              <a href="coisas-costa-sul.html" class="btn btn--ghost"
+                >Costa Sul</a
+              >
+              <a href="coisas-melhores-porto-santo.html" class="btn btn--ghost"
+                >Porto Santo</a
+              >
+              <a href="coisas-melhores-capital.html" class="btn btn--ghost"
+                >Capital</a
+              >
+            </div>
+          </div>
+          <!-- 🔵 FIM DA SECÇÃO -->
+
+          <div class="cards-grid cards-grid--3">
+            <!-- CARD 1 -->
+            <article class="experience-card">
+              <img
+                src="https://madeiralovers.com/wp-content/uploads/2024/07/caminhada-levada-25-fontes-madeira-1024x768.jpg"
+                class="card-img"
+                alt="Trilho das 25 Fontes"
+              />
+              <h2>Trilho das 25 Fontes</h2>
+              <p class="experience-card__meta">Costa Norte • Trilhos</p>
+              <p class="experience-card__desc">
+                Caminhada guiada pelas levadas, atravessando túneis escavados na
+                montanha e passando por várias cascatas emblemáticas. Um
+                percurso imersivo pela Laurissilva, com trilhos estreitos,
+                vegetação densa e miradouros naturais que revelam vales
+                profundos e lagoas cristalinas.
+              </p>
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <button class="btn btn--primary">Carrinho</button>
+              </footer>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="experience-card">
+              <img
+                src="https://blog.madeira.best/storage/uploads/tinymce/melhores%20locais%20para%20ver%20o%20p%C3%B4r%20do%20sol%20na%20madeira-%20miradouro%20do%20cabo%20gir%C3%A3o_2.jpg"
+                class="card-img"
+                alt="Pôr do Sol no Cabo Girão"
+              />
+              <h2>Pôr do Sol no Cabo Girão</h2>
+              <p class="experience-card__meta">Costa Sul • Natureza</p>
+              <p class="experience-card__desc">
+                Visita guiada ao miradouro, com transporte incluído e uma prova
+                de vinho regional ao pôr do sol. A experiência combina vistas
+                panorâmicas sobre a costa sul, explicações do guia sobre a
+                formação geológica do Cabo Girão e um momento final de
+                degustação num produtor local, ideal para apreciar os sabores da
+                ilha.
+              </p>
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <button class="btn btn--primary">Carrinho</button>
+              </footer>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

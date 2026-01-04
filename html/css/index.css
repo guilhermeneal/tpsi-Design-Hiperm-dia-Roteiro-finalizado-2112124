@@ -1,0 +1,276 @@
+/* ============================================
+   INDEX — MADEIRENSE THEME (LIGHT + DARK)
+   ============================================ */
+
+.index-page {
+  --madeira-blue: #1b4d89;
+  --madeira-blue-light: #3f8efc;
+  --madeira-green: #2f7d4c;
+  --madeira-gold: #f4b860;
+  --madeira-sand: #f7e9d7;
+
+  --bg-index: linear-gradient(135deg, #1b4d89 0%, #3f8efc 100%);
+  --surface-index: #ffffff;
+  --surface-alt-index: #f3f6fa;
+
+  --text-index: #1f2937;
+  --text-muted-index: #6b7280;
+
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-soft-index: 0 6px 20px rgba(0,0,0,0.12);
+  --shadow-strong-index: 0 10px 30px rgba(0,0,0,0.18);
+
+  --transition-index: 220ms ease;
+}
+
+/* DARK MODE */
+html[data-theme="dark"] .index-page {
+  --bg-index: linear-gradient(135deg, #0a1a33 0%, #0f2a4d 100%);
+  --surface-index: #0f172a;
+  --surface-alt-index: #1e293b;
+
+  --text-index: #e2e8f0;
+  --text-muted-index: #94a3b8;
+
+  --madeira-blue: #3f8efc;
+  --madeira-blue-light: #60a5fa;
+  --madeira-green: #4ade80;
+  --madeira-gold: #fbbf24;
+
+  --shadow-soft-index: 0 6px 20px rgba(0,0,0,0.45);
+  --shadow-strong-index: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Fundo */
+.index-page {
+  background: var(--bg-index);
+  background-attachment: fixed;
+  color: var(--text-index);
+}
+.form-select {
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--background-light);
+  color: var(--text-color);
+  font-size: 1rem;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%233f8efc' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px;
+}
+
+/* Card principal */
+.index-page .card {
+  background: var(--surface-index);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: var(--shadow-soft-index);
+  transition: var(--transition-index);
+}
+
+html[data-theme="dark"] .index-page .card {
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Título */
+.index-page h1 {
+  background: linear-gradient(90deg, var(--madeira-blue), var(--madeira-green));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+}
+
+html[data-theme="dark"] .index-page h1 {
+  background: linear-gradient(90deg, var(--madeira-gold), var(--madeira-blue-light));
+}
+
+/* Subtítulo */
+.index-page .section-subtitle {
+  color: var(--text-muted-index);
+}
+
+/* Search bar */
+.index-page .search-bar input,
+.index-page .search-bar select {
+  background: var(--surface-alt-index);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--text-muted-index);
+  padding: 0.8rem 1rem;
+  transition: var(--transition-index);
+}
+.pref-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pref-item span {
+  font-weight: 600;
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+.pref-item select {
+  flex: 1;
+}
+
+.index-page .search-bar input:focus,
+.index-page .search-bar select:focus {
+  border-color: var(--madeira-gold);
+  box-shadow: 0 0 0 3px rgba(244,184,96,0.35);
+}
+
+/* Cards de atividades */
+.index-page .experience-card {
+  background: var(--surface-index);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: var(--shadow-soft-index);
+  transition: var(--transition-index);
+}
+
+.index-page .experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong-index);
+}
+
+.index-page .experience-card h3 {
+  color: var(--madeira-blue);
+}
+
+html[data-theme="dark"] .index-page .experience-card h3 {
+  color: var(--madeira-gold);
+}
+
+.index-page .experience-card__meta {
+  color: var(--text-muted-index);
+}
+
+.index-page .experience-card__price {
+  color: var(--madeira-green);
+  font-weight: 700;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-soft-index);
+}
+.suggestion-btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  background: var(--madeira-blue-light);
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft-index);
+  transition: 0.2s ease;
+}
+
+.suggestion-btn:hover {
+  background: var(--madeira-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong-index);
+}
+
+/* ============================================
+   GERAR ROTEIRO
+   ============================================ */
+
+.itinerary-card {
+  background: var(--surface-index);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-soft-index);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: var(--transition-index);
+  margin-top: 2rem;
+}
+
+.itinerary-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(90deg, var(--madeira-blue), var(--madeira-green));
+  -webkit-background-clip: text;
+  color: white;
+}
+
+html[data-theme="dark"] .itinerary-card h2 {
+  background: linear-gradient(90deg, var(--madeira-gold), var(--madeira-blue-light));
+}
+
+.itinerary-form {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.itinerary-form select {
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-md);
+  background: var(--surface-alt-index);
+  border: 1px solid var(--text-muted-index);
+}
+
+.btn--itinerary {
+  margin-top: 1rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--madeira-gold), #ff9f1c);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-index);
+}
+
+.btn--itinerary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong-index);
+}
+
+/* ============================================
+   SUGESTÕES DE LUGARES
+   ============================================ */
+
+.suggestions-box {
+  background: var(--surface-index);
+  padding: 2rem 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft-index);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.suggestion-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.suggestion-buttons button {
+  padding: 0.7rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  background: var(--madeira-blue-light);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft-index);
+}

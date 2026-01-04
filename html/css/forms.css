@@ -1,0 +1,170 @@
+/* ============================================
+   LOGIN & REGISTO — MADEIRENSE THEME
+   Light + Dark Mode
+   ============================================ */
+
+/* --------------------------------------------
+   PALETA MADEIRENSE — LIGHT MODE
+   -------------------------------------------- */
+:root {
+  --madeira-blue: #1b4d89;
+  --madeira-blue-light: #3f8efc;
+  --madeira-green: #2f7d4c;
+  --madeira-gold: #f4b860;
+  --madeira-sand: #f7e9d7;
+
+  --bg: linear-gradient(135deg, #1b4d89 0%, #3f8efc 100%);
+
+  --surface: #ffffff;
+  --surface-alt: #f3f6fa;
+
+  --text: #1f2937;
+  --text-muted: #6b7280;
+
+  --text-color: var(--text);
+  --border-color: #d0d7e2;
+  --background-light: var(--surface-alt);
+  --primary-color: var(--madeira-blue-light);
+
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-soft: 0 6px 20px rgba(0,0,0,0.12);
+  --shadow-strong: 0 10px 30px rgba(0,0,0,0.18);
+
+  --transition: 220ms ease;
+}
+
+/* --------------------------------------------
+   PALETA MADEIRENSE — DARK MODE
+   -------------------------------------------- */
+:root[data-theme="dark"] {
+  --bg: linear-gradient(135deg, #0a1a33 0%, #0f2a4d 100%);
+
+  --surface: #0f172a;
+  --surface-alt: #1e293b;
+
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+
+  --madeira-blue: #3f8efc;
+  --madeira-blue-light: #60a5fa;
+  --madeira-green: #4ade80;
+  --madeira-gold: #fbbf24;
+
+  --text-color: var(--text);
+  --border-color: #334155;
+  --background-light: var(--surface-alt);
+  --primary-color: var(--madeira-gold);
+
+  --shadow-soft: 0 6px 20px rgba(0,0,0,0.45);
+  --shadow-strong: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* --------------------------------------------
+   INPUTS GERAIS
+   -------------------------------------------- */
+.field input,
+.auth-form input,
+.form-input {
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--background-light);
+  font-size: 1rem;
+  transition: var(--transition);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  color: var(--text-color);
+}
+
+.field input:focus,
+.auth-form input:focus,
+.form-input:focus {
+  border-color: var(--primary-color);
+  background: var(--background-light);
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+  outline: none;
+}
+input {
+  color: #000 !important;
+}
+
+/* --------------------------------------------
+   FORMULÁRIO DE CONTACTO — LADO A LADO
+   -------------------------------------------- */
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-group--full {
+  grid-column: span 2;
+}
+
+.contact-form .btn--gradient {
+  grid-column: span 2;
+  justify-self: start;
+}
+
+/* --------------------------------------------
+   TEXTAREA ESTILO PREMIUM (AZUL)
+   -------------------------------------------- */
+textarea.form-input {
+  min-height: 220px;
+  resize: vertical;
+  background-color: #e0f2ff;
+  border: 2px solid #3f8efc;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  line-height: 1.6;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  transition: border-color 0.3s ease;
+}
+
+textarea.form-input:focus {
+  border-color: #1b4d89;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(63,142,252,0.25);
+}
+
+/* --------------------------------------------
+   BOTÃO GRADIENTE
+   -------------------------------------------- */
+.btn--gradient {
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn--gradient:hover {
+  background: linear-gradient(90deg, #005f8f, #0096c7);
+}
+@media (min-width: 768px) {
+  .contact-form {
+    grid-template-columns: 300px 1fr;
+    align-items: start;
+  }
+
+  .contact-form .btn--gradient {
+    grid-column: span 2;
+    justify-self: start;
+  }
+
+  .contact-form .form-group--full {
+    grid-column: span 2;
+  }
+}

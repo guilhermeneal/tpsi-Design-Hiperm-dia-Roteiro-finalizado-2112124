@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Porto Santo – Lugares para ver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/coisas.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+
+  <body class="coisas-page">
+    <div class="app-shell">
+      <!-- NAVBAR -->
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="index.html" class="site-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+              class="site-logo__img"
+            />
+            <span class="site-logo__text"
+              >Madeira <span>Experiences</span></span
+            >
+          </a>
+
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li><a href="index.html" class="site-nav__link">Início</a></li>
+              <li>
+                <a
+                  href="lugares.html"
+                  class="site-nav__link site-nav__link--active"
+                  >Lugares para ver</a
+                >
+              </li>
+              <li>
+                <a href="coisas-melhoresl.html" class="site-nav__link"
+                  >Coisas para Fazer</a
+                >
+              </li>
+              <li>
+                <a href="inspiracao.html" class="site-nav__link"
+                  >Inspiração de Viagem</a
+                >
+              </li>
+              <li>
+                <a href="tendencias.html" class="site-nav__link">Tendências</a>
+              </li>
+              <li>
+                <a href="favoritos.html" class="site-nav__link">Favoritos</a>
+              </li>
+              <li>
+                <a
+                  href="carrinho.html"
+                  class="site-nav__link site-nav__link--pill"
+                  >Carrinho</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="site-header__actions">
+            <!-- CHECKBOX INVISÍVEL -->
+            <input type="checkbox" id="toggleNoti" class="noti-toggle" />
+
+            <!-- SINO -->
+            <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
+
+            <!-- DROPDOWN -->
+            <div class="notifications-dropdown">
+              <h3>Notificações</h3>
+
+              <ul class="notifications-list">
+                <li>
+                  <a href="./notificacoes-atividades.html"
+                    >🌄 Notificações de atividades</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-pagamentos.html"
+                    >💵 Notificações de pagamentos</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-updates.html">📢 Update do site</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="app-main app-main--full">
+        <section class="card">
+          <header class="section-header">
+            <h1>Porto Santo</h1>
+            <p class="section-subtitle">Lugares imperdíveis na ilha dourada.</p>
+          </header>
+
+          <div class="cards-grid cards-grid--3">
+            <!-- Aqui colocas os cards de Porto Santo -->
+            <article class="experience-card">
+              <img
+                src="https://www.nit.pt/wp-content/uploads/2018/06/d6b4756c0223054148f540fc01bbc56d.jpg"
+                class="card-img"
+                alt="Dia de Praia em Porto Santo"
+              />
+              <h2>Dia de Praia em Porto Santo</h2>
+              <p class="experience-card__meta">Porto Santo • Praia</p>
+              <p class="experience-card__desc">
+                Travessia, transfer e dia livre na praia de areia dourada, com
+                tempo para passeios à beira-mar.
+              </p>
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <button class="btn btn--primary">Carrinho</button>
+              </footer>
+            </article>
+
+            <!-- PICO DO CASTELO -->
+            <article class="experience-card">
+              <img
+                src="https://visitmadeira.com/media/0chdtgva/pico-castelo3-francisco-correia.jpg"
+                class="card-img"
+                alt="Vista do Pico do Castelo em Porto Santo"
+              />
+              <h2>Trilho ao Pico do Castelo</h2>
+              <p class="experience-card__meta">
+                Porto Santo • Trilhos & miradouros
+              </p>
+              <p class="experience-card__desc">
+                Caminhada até ao Pico do Castelo com vistas panorâmicas sobre a
+                ilha, paragens em miradouros e tempo para fotos.
+              </p>
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <button class="btn btn--primary">Carrinho</button>
+              </footer>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

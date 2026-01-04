@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contactos – Madeira Experiences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS base -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/coisas.css" />
+
+    <!-- NAVBAR GLOBAL -->
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+
+  <body class="coisas-page">
+    <div class="app-shell">
+      <!-- NAVBAR PREMIUM GLOBAL -->
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="index.html" class="site-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+              class="site-logo__img"
+            />
+            <span class="site-logo__text">
+              Madeira <span>Experiences</span>
+            </span>
+          </a>
+
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li><a href="index.html" class="site-nav__link">Início</a></li>
+              <li>
+                <a href="lugares.html" class="site-nav__link"
+                  >Lugares para ver</a
+                >
+              </li>
+              <li>
+                <a href="coisas-melhoresl.html" class="site-nav__link"
+                  >Coisas para Fazer</a
+                >
+              </li>
+              <li>
+                <a href="inspiracao.html" class="site-nav__link"
+                  >Inspiração de Viagem</a
+                >
+              </li>
+              <li>
+                <a href="tendencias.html" class="site-nav__link">Tendências</a>
+              </li>
+              <li>
+                <a href="favoritos.html" class="site-nav__link">Favoritos</a>
+              </li>
+              <li><a href="Perguntas.html" class="site-nav__link">FAQ</a></li>
+              <li>
+                <a
+                  href="contactos.html"
+                  class="site-nav__link site-nav__link--active"
+                  >Contactos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="carrinho.html"
+                  class="site-nav__link site-nav__link--pill"
+                  >Carrinho</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="site-header__actions">
+            <!-- CHECKBOX INVISÍVEL -->
+            <input type="checkbox" id="toggleNoti" class="noti-toggle" />
+
+            <!-- SINO -->
+            <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
+
+            <!-- DROPDOWN -->
+            <div class="notifications-dropdown">
+              <h3>Notificações</h3>
+
+              <ul class="notifications-list">
+                <li>
+                  <a href="./notificacoes-atividades.html"
+                    >🌄 Notificações de atividades</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-pagamentos.html"
+                    >💵 Notificações de pagamentos</a
+                  >
+                </li>
+                <li>
+                  <a href="./notificacoes-updates.html">📢 Update do site</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="app-main app-main--full">
+        <section class="card">
+          <header class="section-header">
+            <h1>Contactos</h1>
+            <p class="section-subtitle">
+              Fale connosco — estamos aqui para ajudar
+            </p>
+          </header>
+
+          <!-- LAYOUT LADO A LADO -->
+          <div class="contact-layout">
+            <!-- INFORMAÇÕES DE CONTACTO -->
+            <div class="card madeira-box">
+              <h2>Informações gerais</h2>
+
+              <p><strong>Email:</strong> apoio@madeiraexperiences.com</p>
+              <p><strong>Telefone:</strong> +351 291 000 000</p>
+              <p><strong>Horário:</strong> Segunda a Sábado — 09:00 às 19:00</p>
+              <p><strong>Localização:</strong> Funchal, Ilha da Madeira</p>
+            </div>
+
+            <!-- FORMULÁRIO DE CONTACTO -->
+            <div class="card madeira-box">
+              <h2>Enviar mensagem</h2>
+
+              <form class="form contact-form" style="margin-top: 1rem">
+                <div class="form-group">
+                  <label class="form-label" for="nome">Nome</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    class="form-input"
+                    placeholder="O seu nome"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-input"
+                    placeholder="O seu email"
+                  />
+                </div>
+
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="mensagem">Mensagem</label>
+                  <textarea
+                    id="mensagem"
+                    class="form-input"
+                    placeholder="Escreva a sua mensagem"
+                  ></textarea>
+                </div>
+
+                <button class="btn btn--gradient">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

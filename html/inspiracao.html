@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inspiração de Viagem – Madeira Experiences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS base -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/coisas.css" />
+
+    <!-- NAVBAR GLOBAL -->
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+
+  <body class="coisas-page">
+    <!-- NAVBAR PREMIUM GLOBAL -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/1280px-Flag_of_Madeira.svg.png"
+            class="site-logo__img"
+          />
+          <span class="site-logo__text">
+            Madeira <span>Experiences</span>
+          </span>
+        </a>
+
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li><a href="index.html" class="site-nav__link">Início</a></li>
+            <li>
+              <a href="lugares.html" class="site-nav__link">Lugares para ver</a>
+            </li>
+            <li>
+              <a href="coisas-melhoresl.html" class="site-nav__link"
+                >Coisas para Fazer</a
+              >
+            </li>
+            <li>
+              <a href="inspiracao.html" class="site-nav__link"
+                >Inspiração de Viagem</a
+              >
+            </li>
+            <li>
+              <a href="tendencias.html" class="site-nav__link">Tendências</a>
+            </li>
+            <li>
+              <a href="favoritos.html" class="site-nav__link">Favoritos</a>
+            </li>
+            <li>
+              <a
+                href="coisas-melhoresl.html"
+                class="site-nav__link site-nav__link--active"
+                >Atividades</a
+              >
+            </li>
+            <li>
+              <a
+                href="carrinho.html"
+                class="site-nav__link site-nav__link--pill"
+                >Carrinho</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <!-- CHECKBOX INVISÍVEL -->
+          <input type="checkbox" id="toggleNoti" class="noti-toggle" />
+
+          <!-- SINO -->
+          <label for="toggleNoti" class="icon-button noti-btn">🔔</label>
+
+          <!-- DROPDOWN -->
+          <div class="notifications-dropdown">
+            <h3>Notificações</h3>
+
+            <ul class="notifications-list">
+              <li>
+                <a href="./notificacoes-atividades.html"
+                  >🌄 Notificações de atividades</a
+                >
+              </li>
+              <li>
+                <a href="./notificacoes-pagamentos.html"
+                  >💵 Notificações de pagamentos</a
+                >
+              </li>
+              <li>
+                <a href="./notificacoes-updates.html">📢 Update do site</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="app-shell">
+      <main class="app-main app-main--full">
+        <section class="card">
+          <header class="section-header">
+            <h1>Inspiração de Viagem</h1>
+            <p class="section-subtitle">
+              Categorias temáticas para explorar a Madeira.
+            </p>
+          </header>
+
+          <div class="cards-grid cards-grid--3">
+            <!-- TENDÊNCIAS -->
+            <article class="experience-card">
+              <h2>Tendências</h2>
+
+              <!-- IMAGEM DEBAIXO DO TÍTULO -->
+              <img
+                src="https://intertours.com.pt/wp-content/uploads/2023/07/melhores-lugares-para-ver-o-nascer-do-sol-na-Ilha-da-Madeira-Juncal_Pico-do-Areeiro%C2%A9Filipe-Mendonca.jpg"
+                class="card-img"
+                alt="Imagem de Tendências"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Resumo das experiências mais procuradas, com lista de atividades
+                em destaque. Inclui opção de adicionar ao carrinho ou favoritos,
+                área de Perguntas Frequentes e comentários dos utilizadores.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a href="inspiracao-tendencias.html" class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+
+            <!-- MELHORES LUGARES -->
+            <article class="experience-card">
+              <h2>Melhores lugares a visitar</h2>
+
+              <img
+                src="https://madeiralovers.com/wp-content/uploads/2024/07/caminhada-levada-25-fontes-madeira-1024x768.jpg"
+                class="card-img"
+                alt="Melhores lugares a visitar"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Locais imperdíveis da ilha com descrição detalhada e atividades
+                associadas. Inclui lista de experiências, possibilidade de
+                adicionar compra ou favoritos, Perguntas Frequentes e
+                comentários.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a
+                  href="inspiracao-lugares-visitar.html"
+                  class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+
+            <!-- FESTAS E ARRAIAIS -->
+            <article class="experience-card">
+              <h2>Festas e Arraiais</h2>
+
+              <img
+                src="https://i0.wp.com/funchalnoticias.net/wp-content/uploads/2024/06/saopedro2.png?resize=723%2C522&ssl=1"
+                class="card-img"
+                alt="Festas e Arraiais"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Celebrações locais com gastronomia, música e tradições
+                madeirenses. Inclui agenda de eventos, lista de atividades
+                relacionadas, Perguntas Frequentes e comentários da comunidade.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a href="inspiracao-festa.html" class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+
+            <!-- GASTRONOMIA -->
+            <article class="experience-card">
+              <h2>Gastronomia</h2>
+
+              <img
+                src="https://images.resosys.com/destinations/11/articles/food_pt/inline/barbeque-kebab-from-madeira-and-porto-santo-islands-madeira-archipelago-portugal-european-destinations.jpg"
+                class="card-img"
+                alt="Gastronomia da Madeira"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Provas, mercados e experiências gastronómicas com sabores
+                regionais. Inclui lista de atividades, opção de adicionar ao
+                carrinho ou favoritos, secção de Perguntas Frequentes e
+                comentários.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a href="inspiracao-gastronomia.html" class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+
+            <!-- TRILHOS E LEVADAS -->
+            <article class="experience-card">
+              <h2>Trilhos e levadas</h2>
+
+              <img
+                src="https://www.vagamundos.pt/wp-content/uploads/2020/11/1-101-1.jpg"
+                class="card-img"
+                alt="Trilhos e Levadas"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Caminhadas guiadas pelas levadas e trilhos icónicos da ilha.
+                Inclui descrição das rotas, lista de trilhos disponíveis,
+                possibilidade de reserva, Perguntas Frequentes e comentários.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a
+                  href="inspiracao-trilhos-levadas.html"
+                  class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+
+            <!-- NATUREZA -->
+            <article class="experience-card">
+              <h2>Natureza</h2>
+
+              <img
+                src="https://cdn.prod.rexby.com/image/c5310f6c-4c15-4836-a2b9-fdfaddebbe55?format=webp&width=1080&height=1350"
+                class="card-img"
+                alt="Natureza da Madeira"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Jardins, paisagens protegidas e biodiversidade da Madeira.
+                Inclui atividades ao ar livre, lista de experiências
+                recomendadas, secção de Perguntas Frequentes e comentários.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a href="inspiracao-natureza.html" class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+
+            <!-- CULTURA -->
+            <article class="experience-card">
+              <h2>Cultura</h2>
+
+              <img
+                src="https://intertours.com.pt/wp-content/uploads/2025/12/camacha-ilha-da-madeira-folclore-bailinho-trajes-tradicionais.jpg"
+                class="card-img"
+                alt="Cultura Madeirense"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Museus, património, tradições e artes locais. Inclui lista de
+                experiências culturais, opção de adicionar aos favoritos,
+                Perguntas Frequentes e comentários.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a
+                  href="inspiracao-Cultura-Madeirense.html"
+                  class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+
+            <!-- DESPORTOS -->
+            <article class="experience-card">
+              <h2>Desportos</h2>
+
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/2d/56/ee/caption.jpg?w=300&h=300&s=1"
+                class="card-img"
+                alt="Desportos na Madeira"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Atividades físicas e desportos de aventura como surf, mergulho e
+                parapente. Inclui lista de experiências, possibilidade de
+                reserva, secção de Perguntas Frequentes e comentários dos
+                participantes.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a href="inspiracao-desporto.html" class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+            <article class="experience-card">
+              <h2>Guia de Viagem – Costa Norte</h2>
+
+              <img
+                src="https://thumbs.dreamstime.com/b/paisagem-com-seis-vilarejos-da-costa-norte-madeira-ilha-portugal-269310782.jpg"
+                class="card-img"
+                alt="Costa Norte da Madeira"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Explore a costa norte com trilhos, miradouros, cascatas e
+                aldeias tradicionais. Inclui lista de experiências, favoritos,
+                Perguntas Frequentes e comentários.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a
+                  href="inspiracao-guia-costa-norte.html"
+                  class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+            <article class="experience-card">
+              <h2>Guia de Viagem – Costa Sul</h2>
+
+              <img
+                src="https://visitmadeira.com/media/s20bzluv/canical_pordosol13.jpg?width=1920&height=1080&rnd=133282132253870000"
+                class="card-img"
+                alt="Costa Sul da Madeira"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                A costa sul oferece clima ameno, praias, jardins, passeios de
+                barco e cultura. Inclui lista de experiências, favoritos,
+                Perguntas Frequentes e comentários.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a
+                  href="inspiracao-guia-costa-sul.html"
+                  class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+            <article class="experience-card">
+              <h2>Guia de Viagem – Porto Santo</h2>
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Porto_Santo_-_vista_geral.JPG"
+                class="card-img"
+                alt="Porto Santo"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                Descubra a ilha dourada: praia de 9 km, trilhos, mergulho e
+                relaxamento. Inclui lista de experiências, favoritos, Perguntas
+                Frequentes e comentários.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a
+                  href="inspiracao-guia-PORTO-SANTO.html"
+                  class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+            <article class="experience-card">
+              <h2>Guia de Viagem – Capital</h2>
+
+              <img
+                src="https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/bltdb7860ca71dcf324/688b933801a099981b5aed31/BCC-2024-EXPLORER-FUNCHAL-BEST-PLACES-TO-VISIT-HEADER_MOBILE.jpg?format=webp&quality=60&width=1440"
+                class="card-img"
+                alt="Funchal Capital"
+              />
+
+              <p class="experience-card__meta">
+                Resumo • Lista de experiências • Perguntas Frequentes
+              </p>
+              <p class="experience-card__desc">
+                O Funchal combina história, cultura, gastronomia e atividades
+                urbanas. Inclui lista de experiências, favoritos, Perguntas
+                Frequentes e comentários.
+              </p>
+
+              <footer class="experience-card__footer">
+                <button class="btn btn--ghost">Favoritos</button>
+                <a href="inspiracao-funchal.html" class="btn btn--primary"
+                  >Explorar</a
+                >
+              </footer>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

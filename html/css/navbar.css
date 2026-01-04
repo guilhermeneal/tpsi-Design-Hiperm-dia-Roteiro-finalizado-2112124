@@ -1,0 +1,244 @@
+/* ============================================
+   NAVBAR GLOBAL — MADEIRENSE PREMIUM
+   ============================================ */
+
+.site-header {
+  background: #0a1a33;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  position: relative;
+  z-index: 50;
+}
+
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* LOGO */
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.site-logo__img {
+  width: 40px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.site-logo__text {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.site-logo__text span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* ============================================
+   NOTIFICAÇÕES
+   ============================================ */
+
+/* Checkbox invisível */
+.noti-toggle {
+  display: none;
+}
+
+/* Botão do sino */
+.noti-btn {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.notifications-dropdown {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 320px;
+  background: var(--surface);
+  border-radius: 18px;
+  padding: 1.2rem;
+  display: none;
+  z-index: 9999;
+
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    linear-gradient(to right, var(--madeira-gold), var(--madeira-ocean)) border-box;
+
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+}
+
+/* Mostrar dropdown */
+.noti-toggle:checked ~ .notifications-dropdown {
+  display: block;
+}
+
+/* Título */
+.notifications-dropdown h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--madeira-ocean);
+}
+
+/* Lista */
+.notifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.notifications-list li a {
+  display: block;
+  padding: 0.7rem 0.9rem;
+  border-radius: 12px;
+  background: var(--surface-alt);
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.notifications-list li a:hover {
+  background: var(--madeira-blue-light);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   NAV
+   ============================================ */
+
+.site-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.site-nav__link {
+  color: white;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  transition: 0.2s ease;
+}
+
+.site-nav__link:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* LINK ATIVO */
+.site-nav__link--active {
+  background: #2f7d4c;
+  color: white !important;
+  font-weight: 700;
+}
+
+/* CARRINHO */
+.site-nav__link--pill {
+  background: #f4b860;
+  color: black !important;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* AÇÕES À DIREITA */
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-button {
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* BOTÕES LOGIN */
+.auth-buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.auth-buttons .btn--ghost {
+  background: transparent;
+  border: 1px solid #3f8efc;
+  color: #3f8efc;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+}
+
+.auth-buttons .btn--primary {
+  background: linear-gradient(135deg, #f4b860, #ff9f1c);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+}
+
+/* ============================================
+   MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .site-logo__img {
+    width: 32px;
+  }
+
+  .site-logo__text {
+    font-size: 1rem;
+  }
+
+  .site-header__actions {
+    gap: 0.6rem;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .site-nav--open {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .site-nav--open .site-nav__list {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

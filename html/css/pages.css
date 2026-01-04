@@ -1,0 +1,250 @@
+  /* pages.css – exemplos para o dashboard */
+
+.section-header h1 {
+  font-size: clamp(1.6rem, 2vw + 0.5rem, 2.1rem);
+  margin: 0 0 0.25rem;
+}
+
+.section-subtitle {
+  margin: 0 0 var(--spacing-md);
+  color: var(--color-text-muted);
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(2, 1fr) auto;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.search-bar__field input {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.9rem;
+  background-color: var(--color-surface-alt);
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.cards-grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.experience-card {
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--color-primary-soft) 40%, transparent),
+      transparent
+    ),
+    var(--color-surface-alt);
+}
+
+.experience-card__meta {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.experience-card__footer {
+  margin-top: var(--spacing-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pill-list a {
+  display: inline-flex;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background-color: var(--color-surface-alt);
+}
+/* ============================================
+   INDEX — MADEIRENSE THEME (LIGHT + DARK)
+   ============================================ */
+
+/* Escopo do index */
+.index-page {
+  --madeira-blue: #1b4d89;
+  --madeira-blue-light: #3f8efc;
+  --madeira-green: #2f7d4c;
+  --madeira-gold: #f4b860;
+  --madeira-sand: #f7e9d7;
+
+  --bg-index: linear-gradient(135deg, #1b4d89 0%, #3f8efc 100%);
+  --surface-index: #ffffff;
+  --surface-alt-index: #f3f6fa;
+
+  --text-index: #1f2937;
+  --text-muted-index: #6b7280;
+
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-soft-index: 0 6px 20px rgba(0,0,0,0.12);
+  --shadow-strong-index: 0 10px 30px rgba(0,0,0,0.18);
+
+  --transition-index: 220ms ease;
+}
+
+/* DARK MODE */
+html[data-theme="dark"] .index-page {
+  --bg-index: linear-gradient(135deg, #0a1a33 0%, #0f2a4d 100%);
+
+  --surface-index: #0f172a;
+  --surface-alt-index: #1e293b;
+
+  --text-index: #e2e8f0;
+  --text-muted-index: #94a3b8;
+
+  --madeira-blue: #3f8efc;
+  --madeira-blue-light: #60a5fa;
+  --madeira-green: #4ade80;
+  --madeira-gold: #fbbf24;
+
+  --shadow-soft-index: 0 6px 20px rgba(0,0,0,0.45);
+  --shadow-strong-index: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Fundo */
+.index-page {
+  background: var(--bg-index);
+  background-attachment: fixed;
+  color: var(--text-index);
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Search bar */
+.index-search {
+  margin: 2rem auto;
+  max-width: 900px;
+  background: var(--surface-index);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft-index);
+  display: grid;
+  gap: 1rem;
+}
+
+.index-search input,
+.index-search select {
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--text-muted-index);
+  background: var(--surface-alt-index);
+  transition: var(--transition-index);
+}
+
+.index-search input:focus,
+.index-search select:focus {
+  border-color: var(--madeira-gold);
+  box-shadow: 0 0 0 3px rgba(244,184,96,0.35);
+}
+
+/* Cards de sugestões */
+.suggestions {
+  margin-top: 3rem;
+}
+
+.suggestions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--surface-index);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.suggestion-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (width >= 768px) {
+  .suggestion-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.suggestion-card {
+  background: var(--surface-index);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft-index);
+  transition: var(--transition-index);
+}
+
+.suggestion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong-index);
+}
+
+.suggestion-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--madeira-blue);
+}
+
+html[data-theme="dark"] .suggestion-card h3 {
+  color: var(--madeira-gold);
+}
+
+.suggestion-card p {
+  color: var(--text-muted-index);
+}
+
+/* Botão */
+.btn-index {
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--madeira-gold), #ff9f1c);
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-index);
+}
+
+.btn-index:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong-index);
+}
+
+/* Responsive */
+@media (width < 768px) {
+  .search-bar {
+    grid-template-columns: 1fr;
+  }
+}

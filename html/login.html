@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Entrar – Madeira Experiences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+  </head>
+  <body class="auth-page">
+    <div class="app-shell">
+      <!-- header simples ou none, como preferires -->
+
+      <main class="app-main app-main--full" id="conteudo-principal">
+        <section class="card auth-card" aria-labelledby="login-heading">
+          <div class="registo-box">
+            <h1 id="login-heading">Entrar na plataforma</h1>
+
+            <form class="auth-form">
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" required />
+                <small class="field__hint">Utiliza um email válido.</small>
+                <small class="field__error">Email em formato inválido.</small>
+              </label>
+
+              <label class="field">
+                <span>Palavra-passe</span>
+                <input type="password" name="password" minlength="6" required />
+                <small class="field__hint">Mínimo 6 caracteres.</small>
+                <small class="field__error"
+                  >Preenche a palavra-passe (mínimo 6).</small
+                >
+              </label>
+
+              <button class="btn btn--primary" type="submit">Entrar</button>
+
+              <p class="auth-form__note">
+                Ainda não tens conta? <a href="registo.html">Criar conta</a>
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+/* ============================================
+   NOTIFICAÇÕES — ESTILO MADEIRENSE PREMIUM
+   ============================================ */
+
+.updates-list,
+.activity-alerts,
+.payment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* ITEM BASE PARA TODAS AS NOTIFICAÇÕES */
+.update-item,
+.alert-item,
+.payment-item {
+  background: #ffffff;
+  padding: 1.6rem;
+  border-radius: 18px;
+
+  /* Moldura dupla (ouro + oceano) */
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(to right, var(--madeira-gold), var(--madeira-ocean)) border-box;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: 0.25s ease;
+}
+
+.update-item:hover,
+.alert-item:hover,
+.payment-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+
+/* TÍTULOS */
+.update-item h2,
+.alert-item h2,
+.payment-item h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--madeira-ocean);
+  margin-bottom: 0.6rem;
+}
+
+html[data-theme="dark"] .update-item h2,
+html[data-theme="dark"] .alert-item h2,
+html[data-theme="dark"] .payment-item h2 {
+  color: var(--madeira-gold);
+}
+
+/* TEXTO */
+.update-item p,
+.alert-item p,
+.payment-item p {
+  font-size: 1rem;
+  color: var(--madeira-basalt);
+  line-height: 1.55;
+}
+
+html[data-theme="dark"] .update-item p,
+html[data-theme="dark"] .alert-item p,
+html[data-theme="dark"] .payment-item p {
+  color: var(--text-muted);
+}
+
+/* SEPARADORES */
+.update-item p + p,
+.alert-item p + p,
+.payment-item p + p {
+  margin-top: 0.4rem;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .update-item,
+  .alert-item,
+  .payment-item {
+    padding: 1.3rem;
+  }
+
+  .update-item h2,
+  .alert-item h2,
+  .payment-item h2 {
+    font-size: 1.25rem;
+  }
+}
+/* ============================================
+   NOTIFICAÇÕES — MADEIRENSE PREMIUM
+   ============================================ */
+
+.updates-list,
+.activity-alerts,
+.payment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* CARTÃO BASE */
+.update-item,
+.alert-item,
+.payment-item {
+  background: var(--surface);
+  padding: 1.8rem;
+  border-radius: 20px;
+
+  /* Moldura dupla (ouro + oceano) */
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    linear-gradient(to right, var(--madeira-gold), var(--madeira-ocean)) border-box;
+
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+  transition: 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Linha decorativa tipo bordado da Madeira */
+.update-item::before,
+.alert-item::before,
+.payment-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, var(--madeira-gold), var(--madeira-forest));
+}
+
+.update-item:hover,
+.alert-item:hover,
+.payment-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+}
+
+/* TÍTULOS */
+.update-item h2,
+.alert-item h2,
+.payment-item h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--madeira-ocean);
+  margin-bottom: 0.8rem;
+}
+
+html[data-theme="dark"] .update-item h2,
+html[data-theme="dark"] .alert-item h2,
+html[data-theme="dark"] .payment-item h2 {
+  color: var(--madeira-gold);
+}
+
+/* TEXTO */
+.update-item p,
+.alert-item p,
+.payment-item p {
+  font-size: 1.05rem;
+  color: var(--madeira-basalt);
+  line-height: 1.6;
+}
+
+html[data-theme="dark"] .update-item p,
+html[data-theme="dark"] .alert-item p,
+html[data-theme="dark"] .payment-item p {
+  color: var(--text-muted);
+}
+
+/* SEPARAÇÃO ENTRE LINHAS */
+.update-item p + p,
+.alert-item p + p,
+.payment-item p + p {
+  margin-top: 0.5rem;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .update-item,
+  .alert-item,
+  .payment-item {
+    padding: 1.4rem;
+  }
+
+  .update-item h2,
+  .alert-item h2,
+  .payment-item h2 {
+    font-size: 1.3rem;
+  }
+}
