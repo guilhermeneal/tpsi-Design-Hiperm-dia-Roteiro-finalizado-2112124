@@ -118,8 +118,9 @@ html[data-theme="dark"] .experience-card__meta {
 
 /* Fundo suave inspirado na areia */
 .coisas-page {
-  background: linear-gradient(to bottom, #f7f4ef, #ece7df);
+  background: var(--madeira-bg);
 }
+
 .app-main{}
 /* Linha decorativa nos cards */
 .experience-card::before,
