@@ -2,53 +2,6 @@
    INDEX — MADEIRENSE THEME (LIGHT + DARK)
    ============================================ */
 
-.index-page {
-  --madeira-blue: #1b4d89;
-  --madeira-blue-light: #3f8efc;
-  --madeira-green: #2f7d4c;
-  --madeira-gold: #f4b860;
-  --madeira-sand: #f7e9d7;
-
-  --bg-index: linear-gradient(135deg, #1b4d89 0%, #3f8efc 100%);
-  --surface-index: #ffffff;
-  --surface-alt-index: #f3f6fa;
-
-  --text-index: #1f2937;
-  --text-muted-index: #6b7280;
-
-  --radius-md: 14px;
-  --radius-lg: 22px;
-
-  --shadow-soft-index: 0 6px 20px rgba(0,0,0,0.12);
-  --shadow-strong-index: 0 10px 30px rgba(0,0,0,0.18);
-
-  --transition-index: 220ms ease;
-}
-
-/* DARK MODE */
-html[data-theme="dark"] .index-page {
-  --bg-index: linear-gradient(135deg, #0a1a33 0%, #0f2a4d 100%);
-  --surface-index: #0f172a;
-  --surface-alt-index: #1e293b;
-
-  --text-index: #e2e8f0;
-  --text-muted-index: #94a3b8;
-
-  --madeira-blue: #3f8efc;
-  --madeira-blue-light: #60a5fa;
-  --madeira-green: #4ade80;
-  --madeira-gold: #fbbf24;
-
-  --shadow-soft-index: 0 6px 20px rgba(0,0,0,0.45);
-  --shadow-strong-index: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-/* Fundo */
-.index-page {
-  background: var(--bg-index);
-  background-attachment: fixed;
-  color: var(--text-index);
-}
 .form-select {
   padding: 0.6rem 1rem;
   border-radius: var(--radius-md);
@@ -67,13 +20,9 @@ html[data-theme="dark"] .index-page {
 .index-page .card {
   background: var(--surface-index);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: var(--shadow-soft-index);
   transition: var(--transition-index);
-}
-
-html[data-theme="dark"] .index-page .card {
-  border: 1px solid rgba(255,255,255,0.05);
 }
 
 /* Título */
@@ -84,9 +33,7 @@ html[data-theme="dark"] .index-page .card {
   font-weight: 800;
 }
 
-html[data-theme="dark"] .index-page h1 {
-  background: linear-gradient(90deg, var(--madeira-gold), var(--madeira-blue-light));
-}
+
 
 /* Subtítulo */
 .index-page .section-subtitle {
@@ -102,6 +49,7 @@ html[data-theme="dark"] .index-page h1 {
   padding: 0.8rem 1rem;
   transition: var(--transition-index);
 }
+
 .pref-item {
   display: flex;
   align-items: center;
@@ -122,7 +70,8 @@ html[data-theme="dark"] .index-page h1 {
 .index-page .search-bar input:focus,
 .index-page .search-bar select:focus {
   border-color: var(--madeira-gold);
-  box-shadow: 0 0 0 3px rgba(244,184,96,0.35);
+  /*light preto dark branco*/
+  box-shadow: 0 0 0 3px rgba(244, 184, 96, 0.35);
 }
 
 /* Cards de atividades */
@@ -130,7 +79,7 @@ html[data-theme="dark"] .index-page h1 {
   background: var(--surface-index);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: var(--shadow-soft-index);
   transition: var(--transition-index);
 }
@@ -140,19 +89,11 @@ html[data-theme="dark"] .index-page h1 {
   box-shadow: var(--shadow-strong-index);
 }
 
-.index-page .experience-card h3 {
-  color: var(--madeira-blue);
-}
-
-html[data-theme="dark"] .index-page .experience-card h3 {
-  color: var(--madeira-gold);
-}
-
 .index-page .experience-card__meta {
   color: var(--text-muted-index);
 }
 
-.index-page .experience-card__price {
+.index-page .experience-card__price  {
   color: var(--madeira-green);
   font-weight: 700;
 }
@@ -165,6 +106,7 @@ html[data-theme="dark"] .index-page .experience-card h3 {
   margin-bottom: 1rem;
   box-shadow: var(--shadow-soft-index);
 }
+
 .suggestion-btn {
   display: inline-block;
   padding: 0.7rem 1.2rem;
@@ -195,21 +137,9 @@ html[data-theme="dark"] .index-page .experience-card h3 {
   border-radius: var(--radius-lg);
   padding: 2rem;
   box-shadow: var(--shadow-soft-index);
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   transition: var(--transition-index);
   margin-top: 2rem;
-}
-
-.itinerary-card h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1.2rem;
-  background: linear-gradient(90deg, var(--madeira-blue), var(--madeira-green));
-  -webkit-background-clip: text;
-  color: white;
-}
-
-html[data-theme="dark"] .itinerary-card h2 {
-  background: linear-gradient(90deg, var(--madeira-gold), var(--madeira-blue-light));
 }
 
 .itinerary-form {
@@ -273,4 +203,58 @@ html[data-theme="dark"] .itinerary-card h2 {
   border: none;
   cursor: pointer;
   box-shadow: var(--shadow-soft-index);
+}
+
+h3,
+h2 {
+  color: var(--tittle);
+}
+p{
+  color: var(--text-index);
+}
+body {
+  background: var(--bg-index);
+  background-attachment: fixed;
+  color: var(--text-index);
+}
+
+:root {
+  --madeira-blue-light: #3f8efc;
+  --madeira-green: #2f7d4c;
+  --madeira-sand: #f7e9d7;
+  --tittle: #1b4d89;
+
+  --bg-index: #ffffff;
+  --surface-index: #ffffff;
+  --surface-alt-index: #f3f6fa;
+
+  --text-index: #1f2937;
+  --text-muted-index: #000;
+
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-soft-index: 0 6px 20px rgba(0, 0, 0, 0.12);
+  --shadow-strong-index: 0 10px 30px rgba(0, 0, 0, 0.18);
+
+  --transition-index: 220ms ease:
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-index: #0a1a33 ;
+    --surface-index: #0f172a;
+    --surface-alt-index: #1e293b;
+
+    --text-index: #e2e8f0;
+    --text-muted-index: #94a3b8;
+
+    --madeira-blue-light: #60a5fa;
+    --madeira-green: #4ade80;
+    --madeira-sand: #f7e9d7;
+    --tittle: #fbbf24;
+    --shadow-soft-index: 0 6px 20px rgba(0, 0, 0, 0.45);
+    --shadow-strong-index: 0 10px 30px rgba(0, 0, 0, 0.6);
+  }
 }
